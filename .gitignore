@@ -72,3 +72,18 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# CMake build / IDE output directories
+build/
+out/
+.vs/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# vcpkg installed packages (fetched at configure time)
+vcpkg_installed/
+
+# BooleanOp application output
+output/*
+!output/.gitkeep

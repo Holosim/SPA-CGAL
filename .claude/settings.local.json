@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch(domain:doc.cgal.org)"
+      "WebFetch(domain:doc.cgal.org)",
+      "Read(//c/Users/holosim3d/AppData/Local/Dev/GIT/**)",
+      "Read(//c/dev/git/**)",
+      "Read(//mnt/c/_Dev/GIT/**)",
+      "Bash(git -C \"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg\" rev-parse HEAD)",
+      "Bash(git -C /c/_Dev/lib/vcpkg rev-parse HEAD)"
     ]
   }
 }

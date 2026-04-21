@@ -1,0 +1,2221 @@
+Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+The following packages will be built and installed:
+  * boost-accumulators:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@d3b5d9441801be98690488ff1a72781d997714c2
+  * boost-algorithm:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@de42a042a1a4f4d7a293ef7fcfaa802493ef72f0
+  * boost-align:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@4550a4c5a0044b02be49c57237ce386c795a1e6f
+  * boost-any:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@259c8ba50d5bd0f0bd67dbb309dd40477689c666
+  * boost-array:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@99b577fa8df790296f132dd518aa92ba5b7efcaa
+  * boost-assert:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@f19da0b4f88d3d556e5c68226ad29d19fb5512d5
+  * boost-atomic:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@cd339bff445063affa1973b10ce0d05e9e0bde25
+  * boost-bimap:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@345e0b07d64fd23f0ae874f51b92bca1fa490684
+  * boost-bind:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@64a915580ea3acee2702b8b4fd06d8c41b34166b
+  * boost-callable-traits:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@4a87c51eee4bdc0f385a3b9596f8d5be133081ca
+  * boost-chrono:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@ebb7be768b973a0a6a3e116c3231c429356d5f8e
+  * boost-circular-buffer:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@339cdc881dadc38006b5e66049c982b17aa0a455
+  * boost-cmake:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@cf623e2460b0e669701582bb4b4f7c2f58edab9c
+  * boost-compute:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@90e906919db39ecf72c3cc01fafdf54f88183966
+  * boost-concept-check:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@e1758b2a2a779dd3525e4b67b7311211c51c3235
+  * boost-config:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@9fc9a7a35564377c7524631b5746bd77b1ff6bb3
+  * boost-container:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@da85edb36ed2090288b063745744026dd23db156
+  * boost-container-hash:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@d6ceb8922b847316efbf724cb7df7c28e0e8282b
+  * boost-conversion:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@f44161fb13a818d55243094a9ce3270b737cf76e
+  * boost-core:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@a4ee1de182f85e01295c57b9acb6f9584be17388
+  * boost-crc:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@99195bd3325a059c84648b65ffb37e884dab1b00
+  * boost-date-time:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@67065b98e42851899e5dff400750f5d79d2baf1c
+  * boost-describe:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@b45ba8548669842c649c4e9c21de95be93ef3dda
+  * boost-detail:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@ebd543154e618ddffe7b7aa153f0e14ef6c9055d
+  * boost-dynamic-bitset:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@a23c1cef33f33268de0f29e9a37f221ef5b25baa
+  * boost-endian:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@48cdf6c7ccea38184680e59e5d78dd90c343337e
+  * boost-exception:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@569f0c0c5ef6a4a42c50f49b0eec95aef0cc6a37
+  * boost-filesystem:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@a8478d374772ecdc58a573a1fd05436749534353
+  * boost-foreach:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@540a49f1bed7a9b648eb545c000adb1c7de7194c
+  * boost-format:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@7f4cc9fcdd80eab65fc4812efd37658a1942b37e
+  * boost-function:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@2048498b24410da70663df6357839feb66164ab9
+  * boost-function-types:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@3802e7d77ccbf05b5853737c1768ef0fd3f44c29
+  * boost-functional:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@a8150d40e2b3d92e2609e9e3cc165cbba86caadb
+  * boost-fusion:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@49b5346b0c3471caf8dcb19c78fb982923510393
+  * boost-geometry:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@8b570d8550070d9ddda2d117f17a8aaf86e3fc96
+  * boost-graph:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@83a81d293ce910fd345afadde79b857acc2b8835
+  * boost-headers:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@45ffc654d045acf0356605f006f3672522afa725
+  * boost-heap:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@c166917ace3f03acb634cdb68fb46f2f32b33501
+  * boost-integer:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@84c39b9230d10819aca1b0d2fc8a79a417cde38e
+  * boost-interval:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@af30f16fc7e25e471e2aae35b5206cacde61916f
+  * boost-intrusive:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@fffff3ed54058bb3452129fb8055564e0b672559
+  * boost-io:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@c79681101f2a3a466023edd8ff12068e8d11323d
+  * boost-iostreams[bzip2,core,lzma,zlib,zstd]:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@c52c4c054f7b7a7cb895c3cf81664c8043e8af26
+  * boost-iterator:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@3af9bc41d5ca406591540ef93fdfd87321430877
+  * boost-lambda:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@a431ca722f5fdfdcea22a5e62dca040b5d36cc3c
+  * boost-lexical-cast:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@83fee140b329a32fcf0a28dcea3966c15a9afc7b
+  * boost-logic:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@d223f82d69f6a18810b08df53e09092d6e623d2c
+  * boost-math:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@fdefce782d6c52cd5cb7eb9300be2b1db5461256
+  * boost-move:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@d20e9ac3f296584f51419ff55d77d02e84434357
+  * boost-mp11:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@48a6d4f6c7890f050ab4d0253d11ecb71c5193fe
+  * boost-mpl:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@7c12686c52a82dc407796d9239791d4e74f8ebed
+  * boost-multi-array:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@e4cdcc7fd61e4b9a4b61792be7e1c0653fc19c02
+  * boost-multi-index:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@8492c472fedba33e9328ff7523db0513c1f726dd
+  * boost-multiprecision:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@85e937cd233bc9162fd5a226b5c48a103999ef26
+  * boost-numeric-conversion:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@fb3a9d99aef2786186883c9b74e5c6dfbcc30ff9
+  * boost-optional:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@37d48513a5c0e1dd869909555ca4d58ad34f94da
+  * boost-parameter:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@10a82cb91158e7cbf45de9477f46ed7189206e62
+  * boost-phoenix:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@c11fef02a7518852a8b0b7add96fee4f7c421be7
+  * boost-polygon:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@5a885da0a03975f310fe25f3cc53f32b1034c7fe
+  * boost-pool:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@9e1ba45862580a2e0d9fdd955ebbde3bdbccaf90
+  * boost-predef:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@41db6ec4273c0e91a5720b7b0297855d0d482d47
+  * boost-preprocessor:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@69e38717186a35e6abfa991e9379da8527d655bf
+  * boost-program-options:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@5ddaece880235f21a913176f42774d1930c7ba79
+  * boost-property-map:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@13fc29d54ca86c1fb88f21f52a49df5e574a289f
+  * boost-property-tree:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@ea52a53a79ddca810aed8893e8a2a4eb5cb05e3f
+  * boost-proto:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@8837c7efd5677de7bf2400816cc0e1687fe4cd8c
+  * boost-ptr-container:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@bda9417e4db8b35eccdcdd83981b667d48f17eae
+  * boost-qvm:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@c2a85b7c65ba3926fceb960233d71b130915a3a6
+  * boost-random:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@0cbbd1634b37a46197def498c02754af7402b146
+  * boost-range:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@953221c04869e3032889d95eef9b209281f8c04a
+  * boost-ratio:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@e04da230bfd47f04f4078591096cab18c4984add
+  * boost-rational:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@524b14719856f3c2eea524822826b6e5e85150f9
+  * boost-regex:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@5b2b8c76f23f47366505fc7edb183c9596860d8d
+  * boost-scope:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@ed3b69620db418d61bebf587081b9baa68e6850f
+  * boost-serialization:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@be58890c226ed96b714eb92eda245a0821a49027
+  * boost-smart-ptr:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@3a3824f0a22c01fc18d1b2b6f73f2ee6a21385e8
+  * boost-spirit:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@1add6e97c82a5736d2e66be4a298546064a354e8
+  * boost-static-assert:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@fcb71122d53bd76520ca9fd266bd11efc772f1c6
+  * boost-stl-interfaces:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@427a4006202f5524f740b0a17cc889fa3594301c
+  * boost-system:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@ffa5126f9b2f42c9cc1fd65822916272ba9330ae
+  * boost-thread:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@883057c59674c907b8c1165ed3d1c88fd8f76136
+  * boost-throw-exception:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@57ca915d2601ca7c7fd63b20fa75ecd5e0cfe445
+  * boost-tokenizer:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@a8e68feb1372fbabcddfab9436a2aa99c2e6fcff
+  * boost-tti:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@588fcdc557083ba15d53f09526ae7c9cbf4a1a9a
+  * boost-tuple:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@7100b38f1042d44e77b6eaf06cf946fd3e6fc86f
+  * boost-type-index:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@a549e6af876dde241dc2eddf884f1b0af0519eac
+  * boost-type-traits:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@1820e59c3f5a4f12eee18b4acd98e1f4f8078b2c
+  * boost-typeof:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@7049781217624a5d23e8a7fdbb3b9b762c575110
+  * boost-ublas:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@549fe43cc5a3455dd684d7c2d4bbe57daaf3d031
+  * boost-uninstall:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@afdfdd75ca8c87e3eded36c7177d208f853bdba6
+  * boost-units:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@7fb118d761aa2578aeb36c31967a68939de978a5
+  * boost-unordered:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@1d9b670251ed24b4bbca619ba8d53d94abef6adf
+  * boost-utility:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@0ee9ffd5bdcd704be2187d1fdbdbb66bc23bd1f2
+  * boost-uuid:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@bb57363929104844e406e567595466a1267b2868
+  * boost-variant:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@fb25d533713136047882278550fd90dd561968e6
+  * boost-variant2:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@66abf90331991c40b311f1141f6aef414e619e9b
+  * boost-winapi:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@639211f204a27ab30817b6655efaf3e52af2a6cc
+  * boost-xpressive:x64-windows@1.90.0#1 -- git+https://github.com/microsoft/vcpkg@b3e28be0bfea5df9f2a8f9b274d08c0e12f11917
+  * bzip2[core,tool]:x64-windows@1.0.8#6 -- git+https://github.com/microsoft/vcpkg@2d029da682847c5ebdc54e4dbea001331a02207e
+    cgal:x64-windows@6.1.1 -- git+https://github.com/microsoft/vcpkg@33b5e18224511e28d32bbf14dc081695d3c68f44
+    eigen3:x64-windows@5.0.1 -- git+https://github.com/microsoft/vcpkg@d76be65aad61fe24ae3d70c10fca0bd2c592308e
+  * gmp:x64-windows@6.3.0#3 -- git+https://github.com/microsoft/vcpkg@9b979ff042700c317cb1ae4f2471e00bcfcf7d82
+  * liblzma:x64-windows@5.8.3 -- git+https://github.com/microsoft/vcpkg@ae94eaf58eb64ce5b0dfba7769095c43c6c65d71
+  * mpfr:x64-windows@4.2.2#1 -- git+https://github.com/microsoft/vcpkg@8ba45f432d750cfba4c8d7e1f29cf8d04bbc9cb1
+  * vcpkg-boost:x64-windows@2025-03-29 -- git+https://github.com/microsoft/vcpkg@858b0333b773b5650c3f19ef271e3205542d7ceb
+  * vcpkg-cmake:x64-windows@2024-04-23 -- git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
+  * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
+  * vcpkg-cmake-get-vars:x64-windows@2025-05-29 -- git+https://github.com/microsoft/vcpkg@d6510f888dd526c7828f6b973349e7f30be51254
+  * vcpkg-make:x64-windows@2026-01-01 -- git+https://github.com/microsoft/vcpkg@c1c80d7a4b56ff925cb9d6691e6baa4c44f4e179
+  * zlib:x64-windows@1.3.1 -- git+https://github.com/microsoft/vcpkg@3f05e04b9aededb96786a911a16193cdb711f0c9
+  * zstd:x64-windows@1.5.7 -- git+https://github.com/microsoft/vcpkg@31b7320fab13790c6861cb3c2d50dc8f60ca3602
+Additional packages (*) will be modified to complete this operation.
+A suitable version of 7zip was not found (required v25.1.0).
+Downloading https://github.com/ip7z/7zip/releases/download/25.01/7z2501.exe -> 7z2501.7z.exe
+Successfully downloaded 7z2501.7z.exe
+Extracting 7zip...
+A suitable version of 7zr was not found (required v25.1.0).
+Downloading https://github.com/ip7z/7zip/releases/download/25.01/7zr.exe -> 7d84fcad-7zr.exe
+Successfully downloaded 7d84fcad-7zr.exe
+Restored 0 package(s) from C:\Users\Owner\AppData\Local\vcpkg\archives in 1.17 ms. Use --debug to see more details.
+Installing 1/111 vcpkg-cmake:x64-windows@2024-04-23...
+Building vcpkg-cmake:x64-windows@2024-04-23...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\e74aa1e8f93278a8e71372f1fa08c3df420eb840: info: installing from git registry git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake:x64-windows: 75.6 ms
+vcpkg-cmake:x64-windows package ABI: d823db81677710f56723a1d74fc53297581f284b5a940a98092a469355cb3509
+Installing 2/111 zlib:x64-windows@1.3.1...
+Building zlib:x64-windows@1.3.1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\3f05e04b9aededb96786a911a16193cdb711f0c9: info: installing from git registry git+https://github.com/microsoft/vcpkg@3f05e04b9aededb96786a911a16193cdb711f0c9
+Downloading https://github.com/madler/zlib/archive/v1.3.1.tar.gz -> madler-zlib-v1.3.1.tar.gz
+Successfully downloaded madler-zlib-v1.3.1.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/madler-zlib-v1.3.1.tar.gz
+-- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+-- Applying patch 0002-build-static-or-shared-not-both.patch
+-- Applying patch 0003-android-and-mingw-fixes.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/zlib/src/v1.3.1-2e5db616bf.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/share/zlib/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/lib/pkgconfig/zlib.pc
+Downloading msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst, trying https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Successfully downloaded msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Downloading msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/debug/lib/pkgconfig/zlib.pc
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/share/zlib/copyright
+-- Performing post-build validation
+Starting submission of zlib:x64-windows@1.3.1 to 1 binary cache(s) in the background
+Elapsed time to handle zlib:x64-windows: 9 s
+zlib:x64-windows package ABI: 95319955400126e1121a9baa5065884b075c361dc07e16ad819333eed38a861f
+Completed submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in 35.7 ms
+Installing 3/111 vcpkg-cmake-config:x64-windows@2024-05-23...
+Building vcpkg-cmake-config:x64-windows@2024-05-23...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\97a63e4bc1a17422ffe4eff71da53b4b561a7841: info: installing from git registry git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/copyright
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 55.9 ms
+vcpkg-cmake-config:x64-windows package ABI: 3069af9c4960e0b3b669b522986c5440b92122484438f27101964386b1c5a479
+Installing 4/111 vcpkg-cmake-get-vars:x64-windows@2025-05-29...
+Building vcpkg-cmake-get-vars:x64-windows@2025-05-29...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\d6510f888dd526c7828f6b973349e7f30be51254: info: installing from git registry git+https://github.com/microsoft/vcpkg@d6510f888dd526c7828f6b973349e7f30be51254
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/vcpkg_cmake_get_vars.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake_get_vars
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake_get_vars/CMakeLists.txt
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake-get-vars.cmake.in
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/vcpkg-port-config.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-cmake-get-vars:x64-windows@2025-05-29 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake-get-vars:x64-windows: 53.5 ms
+vcpkg-cmake-get-vars:x64-windows package ABI: 475079b555646e539b69092ec49d2a0a91e2b25e264cd016ace121865a9b3f03
+Completed submission of zlib:x64-windows@1.3.1 to 1 binary cache(s) in 102 ms
+Installing 5/111 vcpkg-make:x64-windows@2026-01-01...
+Building vcpkg-make:x64-windows@2026-01-01...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\c1c80d7a4b56ff925cb9d6691e6baa4c44f4e179: info: installing from git registry git+https://github.com/microsoft/vcpkg@c1c80d7a4b56ff925cb9d6691e6baa4c44f4e179
+Downloading automake-1.17.tar.gz, trying https://ftpmirror.gnu.org/gnu/automake/automake-1.17.tar.gz
+Successfully downloaded automake-1.17.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/automake-1.17.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/vcpkg-make/src/automake-1-c362683103.clean
+-- Found external ninja('1.12.1').
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/vcpkg-make/cmake-get-vars_C_CXX-x64-windows.cmake.log
+-- x64-windows autotools triplet: x86_64-pc-mingw32 (from vcpkg)
+-- Performing post-build validation
+Starting submission of vcpkg-make:x64-windows@2026-01-01 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-make:x64-windows: 4.8 s
+vcpkg-make:x64-windows package ABI: 8ac893bc41667785b11f6cef39813172ec525706761b661085afceddd6b5bb68
+Completed submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in 30.6 ms
+Completed submission of vcpkg-cmake-get-vars:x64-windows@2025-05-29 to 1 binary cache(s) in 30.5 ms
+Installing 6/111 gmp:x64-windows@6.3.0#3...
+Building gmp:x64-windows@6.3.0#3...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\9b979ff042700c317cb1ae4f2471e00bcfcf7d82: info: installing from git registry git+https://github.com/microsoft/vcpkg@9b979ff042700c317cb1ae4f2471e00bcfcf7d82
+Downloading gmp-6.3.0.tar.xz, trying https://ftpmirror.gnu.org/gmp/gmp-6.3.0.tar.xz
+Successfully downloaded gmp-6.3.0.tar.xz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/gmp-6.3.0.tar.xz
+-- Applying patch asmflags.patch
+-- Applying patch cross-tools.patch
+-- Applying patch subdirs.patch
+-- Applying patch msvc_symbol.patch
+-- Applying patch arm64-coff.patch
+-- Applying patch remove_compiler_info.patch
+-- Applying patch c23.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/gmp/src/v6.3.0-1cd9d3fdc4.clean
+-- Found external ninja('1.12.1').
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/gmp/cmake-get-vars_C_CXX-x64-windows.cmake.log
+-- Getting CMake variables for x64-windows
+Downloading autoconf2.71-2.71-3-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/autoconf2.71-2.71-3-any.pkg.tar.zst
+Successfully downloaded autoconf2.71-2.71-3-any.pkg.tar.zst
+Downloading msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/autoconf-wrapper-20240607-1-any.pkg.tar.zst
+Successfully downloaded msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+Downloading msys2-automake-wrapper-20240607-1-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/automake-wrapper-20240607-1-any.pkg.tar.zst
+Successfully downloaded msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+Downloading msys2-binutils-2.44-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/binutils-2.44-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+Downloading msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libtool-2.5.4-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+Downloading msys2-make-4.4.1-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/make-4.4.1-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+Downloading msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+Downloading msys2-which-2.23-4-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/which-2.23-4-x86_64.pkg.tar.zst
+Successfully downloaded msys2-which-2.23-4-x86_64.pkg.tar.zst
+Downloading msys2-bash-5.2.037-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/bash-5.2.037-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+Downloading msys2-coreutils-8.32-5-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/coreutils-8.32-5-x86_64.pkg.tar.zst
+Successfully downloaded msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+Downloading msys2-file-5.46-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/file-5.46-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-file-5.46-2-x86_64.pkg.tar.zst
+Downloading msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/gawk-5.3.2-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+Downloading msys2-grep-1~3.0-7-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/grep-1~3.0-7-x86_64.pkg.tar.zst
+Successfully downloaded msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+Downloading msys2-gzip-1.14-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/gzip-1.14-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+Downloading msys2-diffutils-3.12-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/diffutils-3.12-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+Downloading msys2-sed-4.9-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/sed-4.9-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+Downloading msys2-autoconf2.72-2.72-3-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/autoconf2.72-2.72-3-any.pkg.tar.zst
+Successfully downloaded msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+Downloading msys2-automake1.16-1.16.5-1-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/automake1.16-1.16.5-1-any.pkg.tar.zst
+Successfully downloaded msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+Downloading msys2-automake1.17-1.17-1-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/automake1.17-1.17-1-any.pkg.tar.zst
+Successfully downloaded msys2-automake1.17-1.17-1-any.pkg.tar.zst
+Downloading msys2-libiconv-1.18-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libiconv-1.18-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+Downloading msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libintl-0.22.5-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+Downloading msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/zlib-1.3.1-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+Downloading msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/findutils-4.10.0-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+Downloading msys2-tar-1.35-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/tar-1.35-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-tar-1.35-2-x86_64.pkg.tar.zst
+Downloading msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/gmp-6.3.0-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+Downloading msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+Downloading msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libbz2-1.0.8-4-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+Downloading msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/liblzma-5.8.1-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+Downloading msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libzstd-1.5.7-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+Downloading msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libreadline-8.2.013-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+Downloading msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/mpfr-4.2.2-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+Downloading msys2-libpcre-8.45-5-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libpcre-8.45-5-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+Downloading msys2-m4-1.4.19-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/m4-1.4.19-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+Downloading msys2-perl-5.38.4-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/perl-5.38.4-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+Downloading msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+Downloading msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Applying patch C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/cmake/compile_wrapper_consider_clang-cl.patch
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/d5a92cd6a7955bdb
+-- Generating configure for x64-windows
+-- Finished generating configure for x64-windows
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Configuring x64-windows-dbg
+-- Configuring x64-windows-rel
+-- Building x64-windows-dbg
+-- Installing x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing x64-windows-rel
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/lib/pkgconfig/gmp.pc
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/lib/pkgconfig/gmpxx.pc
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/debug/lib/pkgconfig/gmp.pc
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/debug/lib/pkgconfig/gmpxx.pc
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/manual-tools/gmp/gen-bases.exe
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/manual-tools/gmp/gen-fac.exe
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/manual-tools/gmp/gen-fib.exe
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/manual-tools/gmp/gen-jacobitab.exe
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/manual-tools/gmp/gen-psqr.exe
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/manual-tools/gmp/gen-sieve.exe
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/manual-tools/gmp/gen-trialdivtab.exe
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/gmp_x64-windows/share/gmp/usage
+-- Performing post-build validation
+Starting submission of gmp:x64-windows@6.3.0#3 to 1 binary cache(s) in the background
+Elapsed time to handle gmp:x64-windows: 9.7 min
+gmp:x64-windows package ABI: d48e6edf5abd9f352ef6c857174f10d7d99369df0254767cf66c531078af09f7
+Completed submission of vcpkg-make:x64-windows@2026-01-01 to 1 binary cache(s) in 42.4 ms
+Installing 7/111 mpfr:x64-windows@4.2.2#1...
+Building mpfr:x64-windows@4.2.2#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\8ba45f432d750cfba4c8d7e1f29cf8d04bbc9cb1: info: installing from git registry git+https://github.com/microsoft/vcpkg@8ba45f432d750cfba4c8d7e1f29cf8d04bbc9cb1
+Downloading mpfr-4.2.2.tar.xz, trying http://www.mpfr.org/mpfr-4.2.2/mpfr-4.2.2.tar.xz
+Successfully downloaded mpfr-4.2.2.tar.xz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/mpfr-4.2.2.tar.xz
+-- Applying patch dll.patch
+-- Applying patch src-only.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/mpfr/src/mpfr-4-a215d6f3f2.clean
+-- Found external ninja('1.12.1').
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/mpfr/cmake-get-vars_C_CXX-x64-windows.cmake.log
+-- Using cached msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+Downloading msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+Successfully downloaded msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+-- Using cached msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-which-2.23-4-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+-- Using cached msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+-- Using cached msys2-automake1.17-1.17-1-any.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+-- Using cached msys2-tar-1.35-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+-- Using cached msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Applying patch C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/cmake/compile_wrapper_consider_clang-cl.patch
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/8392cd453c24d30d
+-- Generating configure for x64-windows
+-- Finished generating configure for x64-windows
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Configuring x64-windows-dbg
+-- Configuring x64-windows-rel
+-- Using cached msys2-autoconf-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-automake-wrapper-20240607-1-any.pkg.tar.zst
+-- Using cached msys2-autoconf-archive-2023.02.20-1-any.pkg.tar.zst
+-- Using cached msys2-binutils-2.44-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libtool-2.5.4-1-x86_64.pkg.tar.zst
+-- Using cached msys2-make-4.4.1-2-x86_64.pkg.tar.zst
+-- Using cached msys2-which-2.23-4-x86_64.pkg.tar.zst
+-- Using cached msys2-bash-5.2.037-2-x86_64.pkg.tar.zst
+-- Using cached msys2-coreutils-8.32-5-x86_64.pkg.tar.zst
+-- Using cached msys2-file-5.46-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gawk-5.3.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-grep-1~3.0-7-x86_64.pkg.tar.zst
+-- Using cached msys2-gzip-1.14-1-x86_64.pkg.tar.zst
+-- Using cached msys2-diffutils-3.12-1-x86_64.pkg.tar.zst
+-- Using cached msys2-pkgconf-2.4.3-1-x86_64.pkg.tar.zst
+-- Using cached msys2-sed-4.9-1-x86_64.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using cached msys2-autoconf2.72-2.72-3-any.pkg.tar.zst
+-- Using cached msys2-automake1.16-1.16.5-1-any.pkg.tar.zst
+-- Using cached msys2-automake1.17-1.17-1-any.pkg.tar.zst
+-- Using cached msys2-libiconv-1.18-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libintl-0.22.5-1-x86_64.pkg.tar.zst
+-- Using cached msys2-zlib-1.3.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-findutils-4.10.0-2-x86_64.pkg.tar.zst
+-- Using cached msys2-tar-1.35-2-x86_64.pkg.tar.zst
+-- Using cached msys2-gmp-6.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-gcc-libs-13.3.0-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libbz2-1.0.8-4-x86_64.pkg.tar.zst
+-- Using cached msys2-liblzma-5.8.1-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libzstd-1.5.7-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libreadline-8.2.013-1-x86_64.pkg.tar.zst
+-- Using cached msys2-mpfr-4.2.2-1-x86_64.pkg.tar.zst
+-- Using cached msys2-libpcre-8.45-5-x86_64.pkg.tar.zst
+-- Using cached msys2-m4-1.4.19-2-x86_64.pkg.tar.zst
+-- Using cached msys2-perl-5.38.4-2-x86_64.pkg.tar.zst
+-- Using cached msys2-ncurses-6.5.20240831-2-x86_64.pkg.tar.zst
+-- Using cached msys2-libxcrypt-4.4.38-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/8392cd453c24d30d
+-- Building/Installing x64-windows-dbg
+-- Making target 'all' for x64-windows-dbg
+-- Making target 'install' for x64-windows-dbg
+-- Building/Installing x64-windows-rel
+-- Making target 'all' for x64-windows-rel
+-- Making target 'install' for x64-windows-rel
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/mpfr_x64-windows/lib/pkgconfig/mpfr.pc
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/mpfr_x64-windows/debug/lib/pkgconfig/mpfr.pc
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/mpfr_x64-windows/share/mpfr/usage
+-- Performing post-build validation
+Starting submission of mpfr:x64-windows@4.2.2#1 to 1 binary cache(s) in the background
+Elapsed time to handle mpfr:x64-windows: 3.9 min
+mpfr:x64-windows package ABI: 6e7b88f9693adcffa4b5bd710a5bde4aabaf7b9145f909caaadac50751d0cf30
+Completed submission of gmp:x64-windows@6.3.0#3 to 1 binary cache(s) in 145 ms
+Installing 8/111 vcpkg-boost:x64-windows@2025-03-29...
+Building vcpkg-boost:x64-windows@2025-03-29...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\858b0333b773b5650c3f19ef271e3205542d7ceb: info: installing from git registry git+https://github.com/microsoft/vcpkg@858b0333b773b5650c3f19ef271e3205542d7ceb
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-boost_x64-windows/share/vcpkg-boost/usage.in
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-boost_x64-windows/share/vcpkg-boost/boost-install.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-boost_x64-windows/share/vcpkg-boost/vcpkg-port-config.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/vcpkg-boost_x64-windows/share/vcpkg-boost/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-boost:x64-windows@2025-03-29 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-boost:x64-windows: 79 ms
+vcpkg-boost:x64-windows package ABI: b25a80069e102c7f210bfecb18cedaa24d89a7a0c0632f1f32057cc0993a91b6
+Installing 9/111 boost-uninstall:x64-windows@1.90.0#1...
+Building boost-uninstall:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\afdfdd75ca8c87e3eded36c7177d208f853bdba6: info: installing from git registry git+https://github.com/microsoft/vcpkg@afdfdd75ca8c87e3eded36c7177d208f853bdba6
+-- 
+Please use the following command when you need to remove all boost ports/components:
+    "./vcpkg remove boost-uninstall:x64-windows --recurse"
+
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of boost-uninstall:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-uninstall:x64-windows: 55.4 ms
+boost-uninstall:x64-windows package ABI: 1be34e144205ec8265fa80adf9a3307fe6532410364b92a99481910afca7c398
+Installing 10/111 boost-cmake:x64-windows@1.90.0#1...
+Building boost-cmake:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\cf623e2460b0e669701582bb4b4f7c2f58edab9c: info: installing from git registry git+https://github.com/microsoft/vcpkg@cf623e2460b0e669701582bb4b4f7c2f58edab9c
+Downloading https://github.com/boostorg/cmake/archive/boost-1.90.0.tar.gz -> boostorg-cmake-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-cmake-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-cmake-boost-1.90.0.tar.gz
+-- Applying patch 0001-vcpkg-build.patch
+-- Applying patch 0002-remove-prefix-and-suffix.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-cmake/src/ost-1.90.0-7084b3f473.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Up-to-date: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostFetch.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostInstall.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostMessage.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostRoot.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostTest.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostTestJamfile.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost-cmake/vcpkg-port-config.cmake
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost-cmake/usage
+Downloading https://raw.githubusercontent.com/boostorg/boost/refs/tags/boost-1.90.0/LICENSE_1_0.txt -> boost-1.90.0-LICENSE_1_0.txt
+Successfully downloaded boost-1.90.0-LICENSE_1_0.txt
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost-cmake/copyright
+-- Performing post-build validation
+Starting submission of boost-cmake:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-cmake:x64-windows: 2 s
+boost-cmake:x64-windows package ABI: f5f0227fbfe87e35c9eb2d8d9829fbd102bcc8b8b1c877553a13ab61ca15f2f6
+Completed submission of mpfr:x64-windows@4.2.2#1 to 1 binary cache(s) in 180 ms
+Completed submission of vcpkg-boost:x64-windows@2025-03-29 to 1 binary cache(s) in 25.5 ms
+Completed submission of boost-uninstall:x64-windows@1.90.0#1 to 1 binary cache(s) in 24.1 ms
+Installing 11/111 boost-headers:x64-windows@1.90.0#1...
+Building boost-headers:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\45ffc654d045acf0356605f006f3672522afa725: info: installing from git registry git+https://github.com/microsoft/vcpkg@45ffc654d045acf0356605f006f3672522afa725
+Downloading https://github.com/boostorg/headers/archive/boost-1.90.0.tar.gz -> boostorg-headers-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-headers-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-headers-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-headers/src/ost-1.90.0-cba82c0a22.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-headers_x64-windows/share/boost-headers/copyright
+-- Performing post-build validation
+Starting submission of boost-headers:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-headers:x64-windows: 2 s
+boost-headers:x64-windows package ABI: 95c4a5953e59a1658bdecdae30daa262f5b3fa32e3f381e731e1ec79eddfc8f3
+Completed submission of boost-cmake:x64-windows@1.90.0#1 to 1 binary cache(s) in 35 ms
+Installing 12/111 boost-config:x64-windows@1.90.0#1...
+Building boost-config:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\9fc9a7a35564377c7524631b5746bd77b1ff6bb3: info: installing from git registry git+https://github.com/microsoft/vcpkg@9fc9a7a35564377c7524631b5746bd77b1ff6bb3
+Downloading https://github.com/boostorg/config/archive/boost-1.90.0.tar.gz -> boostorg-config-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-config-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-config-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-config/src/ost-1.90.0-12347e67c4.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-config_x64-windows/share/boost-config/copyright
+-- Performing post-build validation
+Starting submission of boost-config:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-config:x64-windows: 6.7 s
+boost-config:x64-windows package ABI: 564010f442811e1cd873f766a0d77df0ea8afc31308ddb7e5064c6dd21946adb
+Completed submission of boost-headers:x64-windows@1.90.0#1 to 1 binary cache(s) in 41.8 ms
+Installing 13/111 boost-static-assert:x64-windows@1.90.0#1...
+Building boost-static-assert:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\fcb71122d53bd76520ca9fd266bd11efc772f1c6: info: installing from git registry git+https://github.com/microsoft/vcpkg@fcb71122d53bd76520ca9fd266bd11efc772f1c6
+Downloading https://github.com/boostorg/static_assert/archive/boost-1.90.0.tar.gz -> boostorg-static_assert-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-static_assert-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-static_assert-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-static-assert/src/ost-1.90.0-100358d51d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-static-assert_x64-windows/share/boost-static-assert/copyright
+-- Performing post-build validation
+Starting submission of boost-static-assert:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-static-assert:x64-windows: 1.8 s
+boost-static-assert:x64-windows package ABI: 2810c51bd10a5396c824e0882db27e59378ddd219cf73bf6e2ca496f61b9e9a2
+Completed submission of boost-config:x64-windows@1.90.0#1 to 1 binary cache(s) in 54.6 ms
+Installing 14/111 boost-type-traits:x64-windows@1.90.0#1...
+Building boost-type-traits:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\1820e59c3f5a4f12eee18b4acd98e1f4f8078b2c: info: installing from git registry git+https://github.com/microsoft/vcpkg@1820e59c3f5a4f12eee18b4acd98e1f4f8078b2c
+Downloading https://github.com/boostorg/type_traits/archive/boost-1.90.0.tar.gz -> boostorg-type_traits-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-type_traits-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-type_traits-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-type-traits/src/ost-1.90.0-7486f52674.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-type-traits_x64-windows/share/boost-type-traits/copyright
+-- Performing post-build validation
+Starting submission of boost-type-traits:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-type-traits:x64-windows: 4.1 s
+boost-type-traits:x64-windows package ABI: 428e25900d0b4f4ab8119dc0fa6b0346cd82e723f5e9d53f8296fb32eb70dd7b
+Completed submission of boost-static-assert:x64-windows@1.90.0#1 to 1 binary cache(s) in 28.9 ms
+Installing 15/111 boost-assert:x64-windows@1.90.0#1...
+Building boost-assert:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\f19da0b4f88d3d556e5c68226ad29d19fb5512d5: info: installing from git registry git+https://github.com/microsoft/vcpkg@f19da0b4f88d3d556e5c68226ad29d19fb5512d5
+Downloading https://github.com/boostorg/assert/archive/boost-1.90.0.tar.gz -> boostorg-assert-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-assert-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-assert-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-assert/src/ost-1.90.0-48c99ab941.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-assert_x64-windows/share/boost-assert/copyright
+-- Performing post-build validation
+Starting submission of boost-assert:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-assert:x64-windows: 1.8 s
+boost-assert:x64-windows package ABI: c82323b38736c34782c7be5dc54c56b8f64f697c83e9b030f3a232a696a87b26
+Completed submission of boost-type-traits:x64-windows@1.90.0#1 to 1 binary cache(s) in 54.4 ms
+Installing 16/111 boost-throw-exception:x64-windows@1.90.0#1...
+Building boost-throw-exception:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\57ca915d2601ca7c7fd63b20fa75ecd5e0cfe445: info: installing from git registry git+https://github.com/microsoft/vcpkg@57ca915d2601ca7c7fd63b20fa75ecd5e0cfe445
+Downloading https://github.com/boostorg/throw_exception/archive/boost-1.90.0.tar.gz -> boostorg-throw_exception-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-throw_exception-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-throw_exception-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-throw-exception/src/ost-1.90.0-a9b55e045d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/share/boost-throw-exception/copyright
+-- Performing post-build validation
+Starting submission of boost-throw-exception:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-throw-exception:x64-windows: 1.7 s
+boost-throw-exception:x64-windows package ABI: b0e84c04237d36dc91990afa293f835510b6805d44816946d0ccd5c603b9b9dc
+Completed submission of boost-assert:x64-windows@1.90.0#1 to 1 binary cache(s) in 41 ms
+Installing 17/111 boost-preprocessor:x64-windows@1.90.0#1...
+Building boost-preprocessor:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\69e38717186a35e6abfa991e9379da8527d655bf: info: installing from git registry git+https://github.com/microsoft/vcpkg@69e38717186a35e6abfa991e9379da8527d655bf
+Downloading https://github.com/boostorg/preprocessor/archive/boost-1.90.0.tar.gz -> boostorg-preprocessor-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-preprocessor-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-preprocessor-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-preprocessor/src/ost-1.90.0-2f2f4ed921.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-preprocessor_x64-windows/share/boost-preprocessor/copyright
+-- Performing post-build validation
+Starting submission of boost-preprocessor:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-preprocessor:x64-windows: 5.5 s
+boost-preprocessor:x64-windows package ABI: ea57b35379df75a69b0ed9a7be8e2970105ebb47cfd26a16577d15909f571e42
+Completed submission of boost-throw-exception:x64-windows@1.90.0#1 to 1 binary cache(s) in 32.4 ms
+Installing 18/111 boost-io:x64-windows@1.90.0#1...
+Building boost-io:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\c79681101f2a3a466023edd8ff12068e8d11323d: info: installing from git registry git+https://github.com/microsoft/vcpkg@c79681101f2a3a466023edd8ff12068e8d11323d
+Downloading https://github.com/boostorg/io/archive/boost-1.90.0.tar.gz -> boostorg-io-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-io-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-io-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-io/src/ost-1.90.0-7e07208475.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/share/boost-io/copyright
+-- Performing post-build validation
+Starting submission of boost-io:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-io:x64-windows: 1.8 s
+boost-io:x64-windows package ABI: 1f0cb8dca8b83add70a926887b943a8dec89ad777c7a2af7c7c25fe0bb16dd7f
+Completed submission of boost-preprocessor:x64-windows@1.90.0#1 to 1 binary cache(s) in 102 ms
+Installing 19/111 boost-core:x64-windows@1.90.0#1...
+Building boost-core:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\a4ee1de182f85e01295c57b9acb6f9584be17388: info: installing from git registry git+https://github.com/microsoft/vcpkg@a4ee1de182f85e01295c57b9acb6f9584be17388
+Downloading https://github.com/boostorg/core/archive/boost-1.90.0.tar.gz -> boostorg-core-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-core-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-core-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-core/src/ost-1.90.0-711a16cc0a.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-core_x64-windows/share/boost-core/copyright
+-- Performing post-build validation
+Starting submission of boost-core:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-core:x64-windows: 2.8 s
+boost-core:x64-windows package ABI: 45ef08564756a0af71e147d1f9f70463b499034b0815c7283921e135542b7052
+Completed submission of boost-io:x64-windows@1.90.0#1 to 1 binary cache(s) in 42 ms
+Installing 20/111 boost-utility:x64-windows@1.90.0#1...
+Building boost-utility:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\0ee9ffd5bdcd704be2187d1fdbdbb66bc23bd1f2: info: installing from git registry git+https://github.com/microsoft/vcpkg@0ee9ffd5bdcd704be2187d1fdbdbb66bc23bd1f2
+Downloading https://github.com/boostorg/utility/archive/boost-1.90.0.tar.gz -> boostorg-utility-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-utility-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-utility-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-utility/src/ost-1.90.0-ad6b974697.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-utility_x64-windows/share/boost-utility/copyright
+-- Performing post-build validation
+Starting submission of boost-utility:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-utility:x64-windows: 2.2 s
+boost-utility:x64-windows package ABI: b7acbfb054bdeabb79f62dca6b911595f433ba6eabeddbd46f0553161ad9d21f
+Completed submission of boost-core:x64-windows@1.90.0#1 to 1 binary cache(s) in 51 ms
+Installing 21/111 boost-mp11:x64-windows@1.90.0#1...
+Building boost-mp11:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\48a6d4f6c7890f050ab4d0253d11ecb71c5193fe: info: installing from git registry git+https://github.com/microsoft/vcpkg@48a6d4f6c7890f050ab4d0253d11ecb71c5193fe
+Downloading https://github.com/boostorg/mp11/archive/boost-1.90.0.tar.gz -> boostorg-mp11-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-mp11-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-mp11-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-mp11/src/ost-1.90.0-544a2037e4.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-mp11_x64-windows/share/boost-mp11/copyright
+-- Performing post-build validation
+Starting submission of boost-mp11:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-mp11:x64-windows: 2.7 s
+boost-mp11:x64-windows package ABI: c80322b3e7730c9f9dba298cf7be75a9093c5f5428ac5408a8f237026989fff4
+Completed submission of boost-utility:x64-windows@1.90.0#1 to 1 binary cache(s) in 53.7 ms
+Installing 22/111 boost-describe:x64-windows@1.90.0#1...
+Building boost-describe:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\b45ba8548669842c649c4e9c21de95be93ef3dda: info: installing from git registry git+https://github.com/microsoft/vcpkg@b45ba8548669842c649c4e9c21de95be93ef3dda
+Downloading https://github.com/boostorg/describe/archive/boost-1.90.0.tar.gz -> boostorg-describe-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-describe-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-describe-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-describe/src/ost-1.90.0-ac379b77b6.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-describe_x64-windows/share/boost-describe/copyright
+-- Performing post-build validation
+Starting submission of boost-describe:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-describe:x64-windows: 2.3 s
+boost-describe:x64-windows package ABI: 40347ae8895c01125ebb65cd976cb29aae8c18e19d251fe6ff8e93cd4f910394
+Completed submission of boost-mp11:x64-windows@1.90.0#1 to 1 binary cache(s) in 75.4 ms
+Installing 23/111 boost-container-hash:x64-windows@1.90.0#1...
+Building boost-container-hash:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\d6ceb8922b847316efbf724cb7df7c28e0e8282b: info: installing from git registry git+https://github.com/microsoft/vcpkg@d6ceb8922b847316efbf724cb7df7c28e0e8282b
+Downloading https://github.com/boostorg/container_hash/archive/boost-1.90.0.tar.gz -> boostorg-container_hash-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-container_hash-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-container_hash-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-container-hash/src/ost-1.90.0-ea5929f85f.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-container-hash_x64-windows/share/boost-container-hash/copyright
+-- Performing post-build validation
+Starting submission of boost-container-hash:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-container-hash:x64-windows: 2.1 s
+boost-container-hash:x64-windows package ABI: a4594177091264c150af2c56c7bdcf0208962bff578e7f7f53ca98af02ca7a37
+Completed submission of boost-describe:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.6 ms
+Installing 24/111 boost-type-index:x64-windows@1.90.0#1...
+Building boost-type-index:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\a549e6af876dde241dc2eddf884f1b0af0519eac: info: installing from git registry git+https://github.com/microsoft/vcpkg@a549e6af876dde241dc2eddf884f1b0af0519eac
+Downloading https://github.com/boostorg/type_index/archive/boost-1.90.0.tar.gz -> boostorg-type_index-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-type_index-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-type_index-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-type-index/src/ost-1.90.0-3a11281bf8.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-type-index_x64-windows/share/boost-type-index/copyright
+-- Performing post-build validation
+Starting submission of boost-type-index:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-type-index:x64-windows: 2.2 s
+boost-type-index:x64-windows package ABI: 414aa1018cfbe92f36a037331fba0bf3bb75d6815d77c0a05073ea374cce510d
+Completed submission of boost-container-hash:x64-windows@1.90.0#1 to 1 binary cache(s) in 43.3 ms
+Installing 25/111 boost-predef:x64-windows@1.90.0#1...
+Building boost-predef:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\41db6ec4273c0e91a5720b7b0297855d0d482d47: info: installing from git registry git+https://github.com/microsoft/vcpkg@41db6ec4273c0e91a5720b7b0297855d0d482d47
+Downloading https://github.com/boostorg/predef/archive/boost-1.90.0.tar.gz -> boostorg-predef-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-predef-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-predef-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-predef/src/ost-1.90.0-8a8e3c9b1e.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-predef_x64-windows/share/boost-predef/copyright
+-- Performing post-build validation
+Starting submission of boost-predef:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-predef:x64-windows: 3 s
+boost-predef:x64-windows package ABI: 31c3b5f511f026f784350699f7296c271a9a6c78f7ebcfbddf1db4b2424148cf
+Completed submission of boost-type-index:x64-windows@1.90.0#1 to 1 binary cache(s) in 45.9 ms
+Installing 26/111 boost-mpl:x64-windows@1.90.0#1...
+Building boost-mpl:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\7c12686c52a82dc407796d9239791d4e74f8ebed: info: installing from git registry git+https://github.com/microsoft/vcpkg@7c12686c52a82dc407796d9239791d4e74f8ebed
+Downloading https://github.com/boostorg/mpl/archive/boost-1.90.0.tar.gz -> boostorg-mpl-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-mpl-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-mpl-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-mpl/src/ost-1.90.0-c5017d0d4d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-mpl_x64-windows/share/boost-mpl/copyright
+-- Performing post-build validation
+Starting submission of boost-mpl:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-mpl:x64-windows: 12 s
+boost-mpl:x64-windows package ABI: 8d1d72520afbbd336f149c7076ea1fe2bec97e83e9b7bcfe743429cd03a481ba
+Completed submission of boost-predef:x64-windows@1.90.0#1 to 1 binary cache(s) in 57.4 ms
+Installing 27/111 boost-integer:x64-windows@1.90.0#1...
+Building boost-integer:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\84c39b9230d10819aca1b0d2fc8a79a417cde38e: info: installing from git registry git+https://github.com/microsoft/vcpkg@84c39b9230d10819aca1b0d2fc8a79a417cde38e
+Downloading https://github.com/boostorg/integer/archive/boost-1.90.0.tar.gz -> boostorg-integer-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-integer-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-integer-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-integer/src/ost-1.90.0-f9cd1d2491.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/share/boost-integer/copyright
+-- Performing post-build validation
+Starting submission of boost-integer:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-integer:x64-windows: 3.7 s
+boost-integer:x64-windows package ABI: 14d9901de795b7f09b9d32071462e0111befc350fe661029f584629685280d27
+Completed submission of boost-mpl:x64-windows@1.90.0#1 to 1 binary cache(s) in 109 ms
+Installing 28/111 boost-detail:x64-windows@1.90.0#1...
+Building boost-detail:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\ebd543154e618ddffe7b7aa153f0e14ef6c9055d: info: installing from git registry git+https://github.com/microsoft/vcpkg@ebd543154e618ddffe7b7aa153f0e14ef6c9055d
+Downloading https://github.com/boostorg/detail/archive/boost-1.90.0.tar.gz -> boostorg-detail-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-detail-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-detail-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-detail/src/ost-1.90.0-d4dd7efec8.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-detail_x64-windows/share/boost-detail/copyright
+-- Performing post-build validation
+Starting submission of boost-detail:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-detail:x64-windows: 2.2 s
+boost-detail:x64-windows package ABI: 3ff20d44a5128c27cda92a3d9d1ce389f3929c723d6224be52a2baaecfcd1821
+Completed submission of boost-integer:x64-windows@1.90.0#1 to 1 binary cache(s) in 46 ms
+Installing 29/111 boost-variant:x64-windows@1.90.0#1...
+Building boost-variant:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\fb25d533713136047882278550fd90dd561968e6: info: installing from git registry git+https://github.com/microsoft/vcpkg@fb25d533713136047882278550fd90dd561968e6
+Downloading https://github.com/boostorg/variant/archive/boost-1.90.0.tar.gz -> boostorg-variant-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-variant-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-variant-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-variant/src/ost-1.90.0-af54e8c1f6.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-variant_x64-windows/share/boost-variant/copyright
+-- Performing post-build validation
+Starting submission of boost-variant:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-variant:x64-windows: 2.3 s
+boost-variant:x64-windows package ABI: 12e24d14b9b4fb8f0f2590ad6a1a88b081db3d7fcd682c1127a8b9c03d9fdfca
+Completed submission of boost-detail:x64-windows@1.90.0#1 to 1 binary cache(s) in 51.3 ms
+Installing 30/111 boost-typeof:x64-windows@1.90.0#1...
+Building boost-typeof:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\7049781217624a5d23e8a7fdbb3b9b762c575110: info: installing from git registry git+https://github.com/microsoft/vcpkg@7049781217624a5d23e8a7fdbb3b9b762c575110
+Downloading https://github.com/boostorg/typeof/archive/boost-1.90.0.tar.gz -> boostorg-typeof-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-typeof-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-typeof-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-typeof/src/ost-1.90.0-5aac027dc0.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-typeof_x64-windows/share/boost-typeof/copyright
+-- Performing post-build validation
+Starting submission of boost-typeof:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-typeof:x64-windows: 2.1 s
+boost-typeof:x64-windows package ABI: a369fa4301cd592781b42020179d41bc9c86a1c601e61a4e7716acc9b6d1b095
+Completed submission of boost-variant:x64-windows@1.90.0#1 to 1 binary cache(s) in 46.1 ms
+Installing 31/111 boost-winapi:x64-windows@1.90.0#1...
+Building boost-winapi:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\639211f204a27ab30817b6655efaf3e52af2a6cc: info: installing from git registry git+https://github.com/microsoft/vcpkg@639211f204a27ab30817b6655efaf3e52af2a6cc
+Downloading https://github.com/boostorg/winapi/archive/boost-1.90.0.tar.gz -> boostorg-winapi-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-winapi-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-winapi-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-winapi/src/ost-1.90.0-564381c538.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-winapi_x64-windows/share/boost-winapi/copyright
+-- Performing post-build validation
+Starting submission of boost-winapi:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-winapi:x64-windows: 3 s
+boost-winapi:x64-windows package ABI: 457817a5e0d5fbffc025db65e40c873b8b54430e1542b701126ed10953bfbc3b
+Completed submission of boost-typeof:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.7 ms
+Installing 32/111 boost-variant2:x64-windows@1.90.0#1...
+Building boost-variant2:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\66abf90331991c40b311f1141f6aef414e619e9b: info: installing from git registry git+https://github.com/microsoft/vcpkg@66abf90331991c40b311f1141f6aef414e619e9b
+Downloading https://github.com/boostorg/variant2/archive/boost-1.90.0.tar.gz -> boostorg-variant2-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-variant2-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-variant2-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-variant2/src/ost-1.90.0-976890056e.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-variant2_x64-windows/share/boost-variant2/copyright
+-- Performing post-build validation
+Starting submission of boost-variant2:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-variant2:x64-windows: 2.1 s
+boost-variant2:x64-windows package ABI: 23067718ef40a79f727bca343959892f18b0aaae705ee793ea74fda55f09ae52
+Completed submission of boost-winapi:x64-windows@1.90.0#1 to 1 binary cache(s) in 59.3 ms
+Installing 33/111 boost-system:x64-windows@1.90.0#1...
+Building boost-system:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\ffa5126f9b2f42c9cc1fd65822916272ba9330ae: info: installing from git registry git+https://github.com/microsoft/vcpkg@ffa5126f9b2f42c9cc1fd65822916272ba9330ae
+CMake Warning at scripts/cmake/vcpkg_buildpath_length_warning.cmake:4 (message):
+  boost-system's buildsystem uses very long paths and may fail on your
+  system.
+
+  We recommend moving vcpkg to a short path such as 'C:\src\vcpkg' or using
+  the subst command.
+Call Stack (most recent call first):
+  C:/Users/Owner/AppData/Local/vcpkg/registries/git-trees/ffa5126f9b2f42c9cc1fd65822916272ba9330ae/portfile.cmake:3 (vcpkg_buildpath_length_warning)
+  scripts/ports.cmake:206 (include)
+
+
+Downloading https://github.com/boostorg/system/archive/boost-1.90.0.tar.gz -> boostorg-system-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-system-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-system-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-system/src/ost-1.90.0-c8c000e811.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-system_x64-windows/share/boost-system/copyright
+-- Performing post-build validation
+Starting submission of boost-system:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-system:x64-windows: 2.2 s
+boost-system:x64-windows package ABI: 8950c0fab034423272a3be1315c99d524da3df59595ed9e2ac9cf75b253b6aca
+Completed submission of boost-variant2:x64-windows@1.90.0#1 to 1 binary cache(s) in 36.4 ms
+Installing 34/111 boost-dynamic-bitset:x64-windows@1.90.0#1...
+Building boost-dynamic-bitset:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\a23c1cef33f33268de0f29e9a37f221ef5b25baa: info: installing from git registry git+https://github.com/microsoft/vcpkg@a23c1cef33f33268de0f29e9a37f221ef5b25baa
+Downloading https://github.com/boostorg/dynamic_bitset/archive/boost-1.90.0.tar.gz -> boostorg-dynamic_bitset-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-dynamic_bitset-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-dynamic_bitset-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-dynamic-bitset/src/ost-1.90.0-6ac32da3f3.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-dynamic-bitset_x64-windows/share/boost-dynamic-bitset/copyright
+-- Performing post-build validation
+Starting submission of boost-dynamic-bitset:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-dynamic-bitset:x64-windows: 1.9 s
+boost-dynamic-bitset:x64-windows package ABI: ecd04e000a36255d3e1de8cdc1e2a5d5e427e998df5fdb97ee3da2960eac20a3
+Completed submission of boost-system:x64-windows@1.90.0#1 to 1 binary cache(s) in 49.4 ms
+Installing 35/111 boost-random:x64-windows@1.90.0#1...
+Building boost-random:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\0cbbd1634b37a46197def498c02754af7402b146: info: installing from git registry git+https://github.com/microsoft/vcpkg@0cbbd1634b37a46197def498c02754af7402b146
+Downloading https://github.com/boostorg/random/archive/boost-1.90.0.tar.gz -> boostorg-random-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-random-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-random-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-random/src/ost-1.90.0-db7f8c6578.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-random_x64-windows/share/boost-random/copyright
+-- Performing post-build validation
+Starting submission of boost-random:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-random:x64-windows: 4.7 s
+boost-random:x64-windows package ABI: 952e1c82bc6d0c8f32fb117bb0037e3cf4005be789377dc87a566155d07ca0f5
+Completed submission of boost-dynamic-bitset:x64-windows@1.90.0#1 to 1 binary cache(s) in 41.7 ms
+Installing 36/111 boost-move:x64-windows@1.90.0#1...
+Building boost-move:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\d20e9ac3f296584f51419ff55d77d02e84434357: info: installing from git registry git+https://github.com/microsoft/vcpkg@d20e9ac3f296584f51419ff55d77d02e84434357
+Downloading https://github.com/boostorg/move/archive/boost-1.90.0.tar.gz -> boostorg-move-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-move-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-move-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-move/src/ost-1.90.0-0b8fc9ef7a.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-move_x64-windows/share/boost-move/copyright
+-- Performing post-build validation
+Starting submission of boost-move:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-move:x64-windows: 2.3 s
+boost-move:x64-windows package ABI: ea3e7de5849cd2b467e58d708a7b206570bfb833b6280e23cda99e466bae55f7
+Completed submission of boost-random:x64-windows@1.90.0#1 to 1 binary cache(s) in 155 ms
+Installing 37/111 boost-intrusive:x64-windows@1.90.0#1...
+Building boost-intrusive:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\fffff3ed54058bb3452129fb8055564e0b672559: info: installing from git registry git+https://github.com/microsoft/vcpkg@fffff3ed54058bb3452129fb8055564e0b672559
+Downloading https://github.com/boostorg/intrusive/archive/boost-1.90.0.tar.gz -> boostorg-intrusive-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-intrusive-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-intrusive-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-intrusive/src/ost-1.90.0-3e4b015c82.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-intrusive_x64-windows/share/boost-intrusive/copyright
+-- Performing post-build validation
+Starting submission of boost-intrusive:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-intrusive:x64-windows: 2.9 s
+boost-intrusive:x64-windows package ABI: aa1007c5335116c52c52c4962ace02203c8ff1b51b9a98e18b545d985c902321
+Completed submission of boost-move:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.9 ms
+Installing 38/111 boost-container:x64-windows@1.90.0#1...
+Building boost-container:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\da85edb36ed2090288b063745744026dd23db156: info: installing from git registry git+https://github.com/microsoft/vcpkg@da85edb36ed2090288b063745744026dd23db156
+Downloading https://github.com/boostorg/container/archive/boost-1.90.0.tar.gz -> boostorg-container-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-container-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-container-boost-1.90.0.tar.gz
+-- Applying patch posix-threads.diff
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-container/src/ost-1.90.0-ebbe259cd5.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/share/boost-container/copyright
+-- Performing post-build validation
+Starting submission of boost-container:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-container:x64-windows: 5.7 s
+boost-container:x64-windows package ABI: de4b0103c72dacc8445051821627cf85ac71ea0e7f41d58a872b8d1d4bbff576
+Completed submission of boost-intrusive:x64-windows@1.90.0#1 to 1 binary cache(s) in 64.9 ms
+Installing 39/111 boost-lexical-cast:x64-windows@1.90.0#1...
+Building boost-lexical-cast:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\83fee140b329a32fcf0a28dcea3966c15a9afc7b: info: installing from git registry git+https://github.com/microsoft/vcpkg@83fee140b329a32fcf0a28dcea3966c15a9afc7b
+Downloading https://github.com/boostorg/lexical_cast/archive/boost-1.90.0.tar.gz -> boostorg-lexical_cast-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-lexical_cast-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-lexical_cast-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-lexical-cast/src/ost-1.90.0-c44665342f.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/share/boost-lexical-cast/copyright
+-- Performing post-build validation
+Starting submission of boost-lexical-cast:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-lexical-cast:x64-windows: 2.1 s
+boost-lexical-cast:x64-windows package ABI: 70825d2b02990f98dc9f90870a2821dffd555a837d294508f15ad12c5ba8f777
+Completed submission of boost-container:x64-windows@1.90.0#1 to 1 binary cache(s) in 124 ms
+Installing 40/111 boost-concept-check:x64-windows@1.90.0#1...
+Building boost-concept-check:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\e1758b2a2a779dd3525e4b67b7311211c51c3235: info: installing from git registry git+https://github.com/microsoft/vcpkg@e1758b2a2a779dd3525e4b67b7311211c51c3235
+Downloading https://github.com/boostorg/concept_check/archive/boost-1.90.0.tar.gz -> boostorg-concept_check-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-concept_check-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-concept_check-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-concept-check/src/ost-1.90.0-cae984afcf.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-concept-check_x64-windows/share/boost-concept-check/copyright
+-- Performing post-build validation
+Starting submission of boost-concept-check:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-concept-check:x64-windows: 2.1 s
+boost-concept-check:x64-windows package ABI: 158b98a67606d684a313e823e81daed7063939b375041e65d92d97f771fcda92
+Completed submission of boost-lexical-cast:x64-windows@1.90.0#1 to 1 binary cache(s) in 45 ms
+Installing 41/111 boost-math:x64-windows@1.90.0#1...
+Building boost-math:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\fdefce782d6c52cd5cb7eb9300be2b1db5461256: info: installing from git registry git+https://github.com/microsoft/vcpkg@fdefce782d6c52cd5cb7eb9300be2b1db5461256
+Downloading https://github.com/boostorg/math/archive/boost-1.90.0.tar.gz -> boostorg-math-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-math-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-math-boost-1.90.0.tar.gz
+-- Applying patch build-old-libs.patch
+-- Applying patch opt-random.diff
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-math/src/ost-1.90.0-1dbdd65e9e.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-math_x64-windows/share/boost-math/copyright
+-- Performing post-build validation
+Starting submission of boost-math:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-math:x64-windows: 18 s
+boost-math:x64-windows package ABI: 7ecb8fc34f20e3a0b354a0cb77739056bb8660de1b35fe66ad55be7f021421d3
+Completed submission of boost-concept-check:x64-windows@1.90.0#1 to 1 binary cache(s) in 47.4 ms
+Installing 42/111 boost-tuple:x64-windows@1.90.0#1...
+Building boost-tuple:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\7100b38f1042d44e77b6eaf06cf946fd3e6fc86f: info: installing from git registry git+https://github.com/microsoft/vcpkg@7100b38f1042d44e77b6eaf06cf946fd3e6fc86f
+Downloading https://github.com/boostorg/tuple/archive/boost-1.90.0.tar.gz -> boostorg-tuple-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-tuple-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-tuple-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-tuple/src/ost-1.90.0-ea34cc3f11.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/share/boost-tuple/copyright
+-- Performing post-build validation
+Starting submission of boost-tuple:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-tuple:x64-windows: 1.9 s
+boost-tuple:x64-windows package ABI: bbf931d5babdf40b2ca88a8bf753b4d7248f4d6e0d2a693a45eb570dc5d95472
+Completed submission of boost-math:x64-windows@1.90.0#1 to 1 binary cache(s) in 130 ms
+Installing 43/111 boost-optional:x64-windows@1.90.0#1...
+Building boost-optional:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\37d48513a5c0e1dd869909555ca4d58ad34f94da: info: installing from git registry git+https://github.com/microsoft/vcpkg@37d48513a5c0e1dd869909555ca4d58ad34f94da
+Downloading https://github.com/boostorg/optional/archive/boost-1.90.0.tar.gz -> boostorg-optional-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-optional-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-optional-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-optional/src/ost-1.90.0-a5d7d1c31d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/share/boost-optional/copyright
+-- Performing post-build validation
+Starting submission of boost-optional:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-optional:x64-windows: 2 s
+boost-optional:x64-windows package ABI: a6c341c7f3c79ca16299207b7c4a57b4651ecfc8619b4a5d74457f158bc9ef67
+Completed submission of boost-tuple:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.7 ms
+Installing 44/111 boost-function-types:x64-windows@1.90.0#1...
+Building boost-function-types:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\3802e7d77ccbf05b5853737c1768ef0fd3f44c29: info: installing from git registry git+https://github.com/microsoft/vcpkg@3802e7d77ccbf05b5853737c1768ef0fd3f44c29
+Downloading https://github.com/boostorg/function_types/archive/boost-1.90.0.tar.gz -> boostorg-function_types-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-function_types-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-function_types-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-function-types/src/ost-1.90.0-863be242f4.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-function-types_x64-windows/share/boost-function-types/copyright
+-- Performing post-build validation
+Starting submission of boost-function-types:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-function-types:x64-windows: 2.5 s
+boost-function-types:x64-windows package ABI: 92ef1428ce0840584285e564b89a87d68f1a4a7b6223c1b3688aa96d4f6f0bbe
+Completed submission of boost-optional:x64-windows@1.90.0#1 to 1 binary cache(s) in 43.5 ms
+Installing 45/111 boost-bind:x64-windows@1.90.0#1...
+Building boost-bind:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\64a915580ea3acee2702b8b4fd06d8c41b34166b: info: installing from git registry git+https://github.com/microsoft/vcpkg@64a915580ea3acee2702b8b4fd06d8c41b34166b
+Downloading https://github.com/boostorg/bind/archive/boost-1.90.0.tar.gz -> boostorg-bind-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-bind-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-bind-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-bind/src/ost-1.90.0-13d0668dd9.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-bind_x64-windows/share/boost-bind/copyright
+-- Performing post-build validation
+Starting submission of boost-bind:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-bind:x64-windows: 2 s
+boost-bind:x64-windows package ABI: 8e7d67b6778cf5ee845f57695151f1a5131c56c13b0c4057fd54a2e850a36cd6
+Completed submission of boost-function-types:x64-windows@1.90.0#1 to 1 binary cache(s) in 51.4 ms
+Installing 46/111 boost-function:x64-windows@1.90.0#1...
+Building boost-function:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\2048498b24410da70663df6357839feb66164ab9: info: installing from git registry git+https://github.com/microsoft/vcpkg@2048498b24410da70663df6357839feb66164ab9
+Downloading https://github.com/boostorg/function/archive/boost-1.90.0.tar.gz -> boostorg-function-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-function-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-function-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-function/src/ost-1.90.0-fc93f6d122.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-function_x64-windows/share/boost-function/copyright
+-- Performing post-build validation
+Starting submission of boost-function:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-function:x64-windows: 2 s
+boost-function:x64-windows package ABI: 7778cf48ddb3ff684d644cf0827e72904c526034ea9bd9387a8edd1a1cad68f5
+Completed submission of boost-bind:x64-windows@1.90.0#1 to 1 binary cache(s) in 54.5 ms
+Installing 47/111 boost-functional:x64-windows@1.90.0#1...
+Building boost-functional:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\a8150d40e2b3d92e2609e9e3cc165cbba86caadb: info: installing from git registry git+https://github.com/microsoft/vcpkg@a8150d40e2b3d92e2609e9e3cc165cbba86caadb
+Downloading https://github.com/boostorg/functional/archive/boost-1.90.0.tar.gz -> boostorg-functional-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-functional-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-functional-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-functional/src/ost-1.90.0-ee74ea2d91.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-functional_x64-windows/share/boost-functional/copyright
+-- Performing post-build validation
+Starting submission of boost-functional:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-functional:x64-windows: 2.1 s
+boost-functional:x64-windows package ABI: 212a675b06e29b8407473f7f018707724be4ca375c659ae58dd1131f16fbb021
+Completed submission of boost-function:x64-windows@1.90.0#1 to 1 binary cache(s) in 45 ms
+Installing 48/111 boost-fusion:x64-windows@1.90.0#1...
+Building boost-fusion:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\49b5346b0c3471caf8dcb19c78fb982923510393: info: installing from git registry git+https://github.com/microsoft/vcpkg@49b5346b0c3471caf8dcb19c78fb982923510393
+Downloading https://github.com/boostorg/fusion/archive/boost-1.90.0.tar.gz -> boostorg-fusion-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-fusion-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-fusion-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-fusion/src/ost-1.90.0-36c06e7524.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-fusion_x64-windows/share/boost-fusion/copyright
+-- Performing post-build validation
+Starting submission of boost-fusion:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-fusion:x64-windows: 11 s
+boost-fusion:x64-windows package ABI: 6fd749695f409897cd11dd52fd4c2cd965b4809736360d6b454699bcc6b04194
+Completed submission of boost-functional:x64-windows@1.90.0#1 to 1 binary cache(s) in 47.6 ms
+Installing 49/111 boost-iterator:x64-windows@1.90.0#1...
+Building boost-iterator:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\3af9bc41d5ca406591540ef93fdfd87321430877: info: installing from git registry git+https://github.com/microsoft/vcpkg@3af9bc41d5ca406591540ef93fdfd87321430877
+Downloading https://github.com/boostorg/iterator/archive/boost-1.90.0.tar.gz -> boostorg-iterator-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-iterator-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-iterator-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-iterator/src/ost-1.90.0-dd58b06ecd.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-iterator_x64-windows/share/boost-iterator/copyright
+-- Performing post-build validation
+Starting submission of boost-iterator:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-iterator:x64-windows: 3 s
+boost-iterator:x64-windows package ABI: 4d06845e41d23be7744909931e746afd882023e913ba1ad1bd95a02d1373c37b
+Completed submission of boost-fusion:x64-windows@1.90.0#1 to 1 binary cache(s) in 141 ms
+Installing 50/111 boost-lambda:x64-windows@1.90.0#1...
+Building boost-lambda:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\a431ca722f5fdfdcea22a5e62dca040b5d36cc3c: info: installing from git registry git+https://github.com/microsoft/vcpkg@a431ca722f5fdfdcea22a5e62dca040b5d36cc3c
+Downloading https://github.com/boostorg/lambda/archive/boost-1.90.0.tar.gz -> boostorg-lambda-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-lambda-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-lambda-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-lambda/src/ost-1.90.0-2e548fb4cc.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-lambda_x64-windows/share/boost-lambda/copyright
+-- Performing post-build validation
+Starting submission of boost-lambda:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-lambda:x64-windows: 2.4 s
+boost-lambda:x64-windows package ABI: 8838a1e2ba1af581dd545a82558b1df9797b80e6f304c334e2c7a527e6fabed9
+Completed submission of boost-iterator:x64-windows@1.90.0#1 to 1 binary cache(s) in 48.3 ms
+Installing 51/111 boost-units:x64-windows@1.90.0#1...
+Building boost-units:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\7fb118d761aa2578aeb36c31967a68939de978a5: info: installing from git registry git+https://github.com/microsoft/vcpkg@7fb118d761aa2578aeb36c31967a68939de978a5
+Downloading https://github.com/boostorg/units/archive/boost-1.90.0.tar.gz -> boostorg-units-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-units-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-units-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-units/src/ost-1.90.0-00a09fc790.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-units_x64-windows/share/boost-units/copyright
+-- Performing post-build validation
+Starting submission of boost-units:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-units:x64-windows: 5.1 s
+boost-units:x64-windows package ABI: 323a13e64aad60535cc63531ce769ce4752c7656281ab9e23c3e5da48404024f
+Completed submission of boost-lambda:x64-windows@1.90.0#1 to 1 binary cache(s) in 54.6 ms
+Installing 52/111 boost-smart-ptr:x64-windows@1.90.0#1...
+Building boost-smart-ptr:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\3a3824f0a22c01fc18d1b2b6f73f2ee6a21385e8: info: installing from git registry git+https://github.com/microsoft/vcpkg@3a3824f0a22c01fc18d1b2b6f73f2ee6a21385e8
+Downloading https://github.com/boostorg/smart_ptr/archive/boost-1.90.0.tar.gz -> boostorg-smart_ptr-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-smart_ptr-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-smart_ptr-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-smart-ptr/src/ost-1.90.0-ed44268256.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-smart-ptr_x64-windows/share/boost-smart-ptr/copyright
+-- Performing post-build validation
+Starting submission of boost-smart-ptr:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-smart-ptr:x64-windows: 2.9 s
+boost-smart-ptr:x64-windows package ABI: ff5ed394062cc1c3f9f27b693759d82d1c031fdceaf4875ae227ce86fa16a4c2
+Completed submission of boost-units:x64-windows@1.90.0#1 to 1 binary cache(s) in 61.1 ms
+Installing 53/111 boost-exception:x64-windows@1.90.0#1...
+Building boost-exception:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\569f0c0c5ef6a4a42c50f49b0eec95aef0cc6a37: info: installing from git registry git+https://github.com/microsoft/vcpkg@569f0c0c5ef6a4a42c50f49b0eec95aef0cc6a37
+Downloading https://github.com/boostorg/exception/archive/boost-1.90.0.tar.gz -> boostorg-exception-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-exception-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-exception-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-exception/src/ost-1.90.0-e3bd92ec37.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/share/boost-exception/copyright
+-- Performing post-build validation
+Starting submission of boost-exception:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-exception:x64-windows: 2.3 s
+boost-exception:x64-windows package ABI: 984f3f6e2c4246c51a0a8c0e34054206c47f6a768dd0336825645176866e27b7
+Completed submission of boost-smart-ptr:x64-windows@1.90.0#1 to 1 binary cache(s) in 53.8 ms
+Installing 54/111 boost-tokenizer:x64-windows@1.90.0#1...
+Building boost-tokenizer:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\a8e68feb1372fbabcddfab9436a2aa99c2e6fcff: info: installing from git registry git+https://github.com/microsoft/vcpkg@a8e68feb1372fbabcddfab9436a2aa99c2e6fcff
+Downloading https://github.com/boostorg/tokenizer/archive/boost-1.90.0.tar.gz -> boostorg-tokenizer-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-tokenizer-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-tokenizer-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-tokenizer/src/ost-1.90.0-a2fc8935b6.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/share/boost-tokenizer/copyright
+-- Performing post-build validation
+Starting submission of boost-tokenizer:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-tokenizer:x64-windows: 1.9 s
+boost-tokenizer:x64-windows package ABI: be5262f7647c2a8cd6fe7784a0310417da23d8eb789383ab65ced94431f1e489
+Completed submission of boost-exception:x64-windows@1.90.0#1 to 1 binary cache(s) in 53.6 ms
+Installing 55/111 boost-regex:x64-windows@1.90.0#1...
+Building boost-regex:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\5b2b8c76f23f47366505fc7edb183c9596860d8d: info: installing from git registry git+https://github.com/microsoft/vcpkg@5b2b8c76f23f47366505fc7edb183c9596860d8d
+Downloading https://github.com/boostorg/regex/archive/boost-1.90.0.tar.gz -> boostorg-regex-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-regex-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-regex-boost-1.90.0.tar.gz
+-- Applying patch compat.diff
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-regex/src/ost-1.90.0-95464e69d3.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-regex_x64-windows/share/boost-regex/copyright
+-- Performing post-build validation
+Starting submission of boost-regex:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-regex:x64-windows: 4.3 s
+boost-regex:x64-windows package ABI: 21493f9b71d5c038a4f021ee5430e52ae8d07ee126563699311c301b7fa19a0a
+Completed submission of boost-tokenizer:x64-windows@1.90.0#1 to 1 binary cache(s) in 40.1 ms
+Installing 56/111 boost-conversion:x64-windows@1.90.0#1...
+Building boost-conversion:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\f44161fb13a818d55243094a9ce3270b737cf76e: info: installing from git registry git+https://github.com/microsoft/vcpkg@f44161fb13a818d55243094a9ce3270b737cf76e
+Downloading https://github.com/boostorg/conversion/archive/boost-1.90.0.tar.gz -> boostorg-conversion-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-conversion-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-conversion-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-conversion/src/ost-1.90.0-068bb0780f.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-conversion_x64-windows/share/boost-conversion/copyright
+-- Performing post-build validation
+Starting submission of boost-conversion:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-conversion:x64-windows: 1.9 s
+boost-conversion:x64-windows package ABI: 4fed127aa9da6e135db8899e3a44879f3eff87022e0d5d64ae4d0dd0b5dc8bed
+Completed submission of boost-regex:x64-windows@1.90.0#1 to 1 binary cache(s) in 64.9 ms
+Installing 57/111 boost-array:x64-windows@1.90.0#1...
+Building boost-array:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\99b577fa8df790296f132dd518aa92ba5b7efcaa: info: installing from git registry git+https://github.com/microsoft/vcpkg@99b577fa8df790296f132dd518aa92ba5b7efcaa
+Downloading https://github.com/boostorg/array/archive/boost-1.90.0.tar.gz -> boostorg-array-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-array-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-array-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-array/src/ost-1.90.0-023a44a736.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-array_x64-windows/share/boost-array/copyright
+-- Performing post-build validation
+Starting submission of boost-array:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-array:x64-windows: 1.8 s
+boost-array:x64-windows package ABI: 198e672f108560a6c8051df0484c4bd5438f8978b96934b7eac0faffdcae4bb6
+Completed submission of boost-conversion:x64-windows@1.90.0#1 to 1 binary cache(s) in 40.7 ms
+Installing 58/111 boost-range:x64-windows@1.90.0#1...
+Building boost-range:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\953221c04869e3032889d95eef9b209281f8c04a: info: installing from git registry git+https://github.com/microsoft/vcpkg@953221c04869e3032889d95eef9b209281f8c04a
+Downloading https://github.com/boostorg/range/archive/boost-1.90.0.tar.gz -> boostorg-range-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-range-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-range-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-range/src/ost-1.90.0-df3a4ebd7b.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-range_x64-windows/share/boost-range/copyright
+-- Performing post-build validation
+Starting submission of boost-range:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-range:x64-windows: 3.5 s
+boost-range:x64-windows package ABI: 5a2a2b32b24704d68bd89ef08cd6d1c4975a10b61d37f81c2e7e64ef865a9f3c
+Completed submission of boost-array:x64-windows@1.90.0#1 to 1 binary cache(s) in 32.3 ms
+Installing 59/111 boost-numeric-conversion:x64-windows@1.90.0#1...
+Building boost-numeric-conversion:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\fb3a9d99aef2786186883c9b74e5c6dfbcc30ff9: info: installing from git registry git+https://github.com/microsoft/vcpkg@fb3a9d99aef2786186883c9b74e5c6dfbcc30ff9
+Downloading https://github.com/boostorg/numeric_conversion/archive/boost-1.90.0.tar.gz -> boostorg-numeric_conversion-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-numeric_conversion-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-numeric_conversion-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-numeric-conversion/src/ost-1.90.0-e32e09cb8f.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/share/boost-numeric-conversion/copyright
+-- Performing post-build validation
+Starting submission of boost-numeric-conversion:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-numeric-conversion:x64-windows: 2.5 s
+boost-numeric-conversion:x64-windows package ABI: f75ee867b8bbfd5a75d5e8d10a047c972af0176d3b64f4f77ca61b09ce57a15a
+Completed submission of boost-range:x64-windows@1.90.0#1 to 1 binary cache(s) in 54.8 ms
+Installing 60/111 boost-unordered:x64-windows@1.90.0#1...
+Building boost-unordered:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\1d9b670251ed24b4bbca619ba8d53d94abef6adf: info: installing from git registry git+https://github.com/microsoft/vcpkg@1d9b670251ed24b4bbca619ba8d53d94abef6adf
+Downloading https://github.com/boostorg/unordered/archive/boost-1.90.0.tar.gz -> boostorg-unordered-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-unordered-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-unordered-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-unordered/src/ost-1.90.0-0a90434307.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-unordered_x64-windows/share/boost-unordered/copyright
+-- Performing post-build validation
+Starting submission of boost-unordered:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-unordered:x64-windows: 3.8 s
+boost-unordered:x64-windows package ABI: a60922e662743814571b2cf25d84532876cff5c2db373331c463729f485beb07
+Completed submission of boost-numeric-conversion:x64-windows@1.90.0#1 to 1 binary cache(s) in 46.5 ms
+Installing 61/111 boost-algorithm:x64-windows@1.90.0#1...
+Building boost-algorithm:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\de42a042a1a4f4d7a293ef7fcfaa802493ef72f0: info: installing from git registry git+https://github.com/microsoft/vcpkg@de42a042a1a4f4d7a293ef7fcfaa802493ef72f0
+Downloading https://github.com/boostorg/algorithm/archive/boost-1.90.0.tar.gz -> boostorg-algorithm-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-algorithm-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-algorithm-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-algorithm/src/ost-1.90.0-b7cd715cba.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-algorithm_x64-windows/share/boost-algorithm/copyright
+-- Performing post-build validation
+Starting submission of boost-algorithm:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-algorithm:x64-windows: 3.5 s
+boost-algorithm:x64-windows package ABI: 54d14a6eb668c06ffb0454e1d8745aec2c7aa71055a0b1dfc46629f6f467ae36
+Completed submission of boost-unordered:x64-windows@1.90.0#1 to 1 binary cache(s) in 57.8 ms
+Installing 62/111 boost-date-time:x64-windows@1.90.0#1...
+Building boost-date-time:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\67065b98e42851899e5dff400750f5d79d2baf1c: info: installing from git registry git+https://github.com/microsoft/vcpkg@67065b98e42851899e5dff400750f5d79d2baf1c
+Downloading https://github.com/boostorg/date_time/archive/boost-1.90.0.tar.gz -> boostorg-date_time-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-date_time-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-date_time-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-date-time/src/ost-1.90.0-3c85e5b301.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-date-time_x64-windows/share/boost-date-time/copyright
+-- Performing post-build validation
+Starting submission of boost-date-time:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-date-time:x64-windows: 3.8 s
+boost-date-time:x64-windows package ABI: 31c3045f7d7e06fe3577ccbe4bb60766771f17c4ede1bc58ddc6cbbdb22beb30
+Completed submission of boost-algorithm:x64-windows@1.90.0#1 to 1 binary cache(s) in 61.2 ms
+Installing 63/111 boost-ratio:x64-windows@1.90.0#1...
+Building boost-ratio:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\e04da230bfd47f04f4078591096cab18c4984add: info: installing from git registry git+https://github.com/microsoft/vcpkg@e04da230bfd47f04f4078591096cab18c4984add
+Downloading https://github.com/boostorg/ratio/archive/boost-1.90.0.tar.gz -> boostorg-ratio-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-ratio-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-ratio-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-ratio/src/ost-1.90.0-9ae5cb24c8.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-ratio_x64-windows/share/boost-ratio/copyright
+-- Performing post-build validation
+Starting submission of boost-ratio:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-ratio:x64-windows: 1.9 s
+boost-ratio:x64-windows package ABI: d3e256258e00835abbb895d481e9ed4af020b66305401992ad10b411c1b06b08
+Completed submission of boost-date-time:x64-windows@1.90.0#1 to 1 binary cache(s) in 90 ms
+Installing 64/111 boost-chrono:x64-windows@1.90.0#1...
+Building boost-chrono:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\ebb7be768b973a0a6a3e116c3231c429356d5f8e: info: installing from git registry git+https://github.com/microsoft/vcpkg@ebb7be768b973a0a6a3e116c3231c429356d5f8e
+Downloading https://github.com/boostorg/chrono/archive/boost-1.90.0.tar.gz -> boostorg-chrono-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-chrono-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-chrono-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-chrono/src/ost-1.90.0-48c8bd7ed0.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-chrono_x64-windows/share/boost-chrono/copyright
+-- Performing post-build validation
+Starting submission of boost-chrono:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-chrono:x64-windows: 4.5 s
+boost-chrono:x64-windows package ABI: aeb17c8375d53d37406d5310722bcf2a63baab3cb2a3ed19f4ec5978590d1d91
+Completed submission of boost-ratio:x64-windows@1.90.0#1 to 1 binary cache(s) in 37.8 ms
+Installing 65/111 boost-align:x64-windows@1.90.0#1...
+Building boost-align:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\4550a4c5a0044b02be49c57237ce386c795a1e6f: info: installing from git registry git+https://github.com/microsoft/vcpkg@4550a4c5a0044b02be49c57237ce386c795a1e6f
+Downloading https://github.com/boostorg/align/archive/boost-1.90.0.tar.gz -> boostorg-align-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-align-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-align-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-align/src/ost-1.90.0-c0f7e0a723.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-align_x64-windows/share/boost-align/copyright
+-- Performing post-build validation
+Starting submission of boost-align:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-align:x64-windows: 2.3 s
+boost-align:x64-windows package ABI: e51f87ca44ebe57075a4a9c05a58a61e633e1dd0f8216b3dfc851ecf3d558152
+Completed submission of boost-chrono:x64-windows@1.90.0#1 to 1 binary cache(s) in 167 ms
+Installing 66/111 boost-atomic:x64-windows@1.90.0#1...
+Building boost-atomic:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\cd339bff445063affa1973b10ce0d05e9e0bde25: info: installing from git registry git+https://github.com/microsoft/vcpkg@cd339bff445063affa1973b10ce0d05e9e0bde25
+Downloading https://github.com/boostorg/atomic/archive/boost-1.90.0.tar.gz -> boostorg-atomic-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-atomic-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-atomic-boost-1.90.0.tar.gz
+-- Applying patch fix-include.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-atomic/src/ost-1.90.0-9d509064e3.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-atomic_x64-windows/share/boost-atomic/copyright
+-- Performing post-build validation
+Starting submission of boost-atomic:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-atomic:x64-windows: 5.5 s
+boost-atomic:x64-windows package ABI: a5c6c7a88559ee760879ca245b982689852ad42724336c6423fec30d01e24b25
+Completed submission of boost-align:x64-windows@1.90.0#1 to 1 binary cache(s) in 46.5 ms
+Installing 67/111 boost-thread:x64-windows@1.90.0#1...
+Building boost-thread:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\883057c59674c907b8c1165ed3d1c88fd8f76136: info: installing from git registry git+https://github.com/microsoft/vcpkg@883057c59674c907b8c1165ed3d1c88fd8f76136
+Downloading https://github.com/boostorg/thread/archive/boost-1.90.0.tar.gz -> boostorg-thread-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-thread-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-thread-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-thread/src/ost-1.90.0-842ca1f29e.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-thread_x64-windows/share/boost-thread/copyright
+-- Performing post-build validation
+Starting submission of boost-thread:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-thread:x64-windows: 8.8 s
+boost-thread:x64-windows package ABI: ad913de4855f8975bb1d5bd6af7be0133072e3c3621af8062f6cfe50bb4d0c02
+Completed submission of boost-atomic:x64-windows@1.90.0#1 to 1 binary cache(s) in 125 ms
+Installing 68/111 boost-stl-interfaces:x64-windows@1.90.0#1...
+Building boost-stl-interfaces:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\427a4006202f5524f740b0a17cc889fa3594301c: info: installing from git registry git+https://github.com/microsoft/vcpkg@427a4006202f5524f740b0a17cc889fa3594301c
+Downloading https://github.com/boostorg/stl_interfaces/archive/boost-1.90.0.tar.gz -> boostorg-stl_interfaces-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-stl_interfaces-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-stl_interfaces-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-stl-interfaces/src/ost-1.90.0-0c8670f728.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-stl-interfaces_x64-windows/share/boost-stl-interfaces/copyright
+-- Performing post-build validation
+Starting submission of boost-stl-interfaces:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-stl-interfaces:x64-windows: 1.9 s
+boost-stl-interfaces:x64-windows package ABI: 61e48686256c420c9a4c07548336d7b83792db6f9474d8cba7abca78f6726a4a
+Completed submission of boost-thread:x64-windows@1.90.0#1 to 1 binary cache(s) in 293 ms
+Installing 69/111 boost-proto:x64-windows@1.90.0#1...
+Building boost-proto:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\8837c7efd5677de7bf2400816cc0e1687fe4cd8c: info: installing from git registry git+https://github.com/microsoft/vcpkg@8837c7efd5677de7bf2400816cc0e1687fe4cd8c
+Downloading https://github.com/boostorg/proto/archive/boost-1.90.0.tar.gz -> boostorg-proto-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-proto-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-proto-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-proto/src/ost-1.90.0-81074666da.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-proto_x64-windows/share/boost-proto/copyright
+-- Performing post-build validation
+Starting submission of boost-proto:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-proto:x64-windows: 3.6 s
+boost-proto:x64-windows package ABI: 4408836a69b2ebed3fe440655f403142970d969e82e892b16a5339215aec554c
+Completed submission of boost-stl-interfaces:x64-windows@1.90.0#1 to 1 binary cache(s) in 40.2 ms
+Installing 70/111 boost-pool:x64-windows@1.90.0#1...
+Building boost-pool:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\9e1ba45862580a2e0d9fdd955ebbde3bdbccaf90: info: installing from git registry git+https://github.com/microsoft/vcpkg@9e1ba45862580a2e0d9fdd955ebbde3bdbccaf90
+Downloading https://github.com/boostorg/pool/archive/boost-1.90.0.tar.gz -> boostorg-pool-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-pool-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-pool-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-pool/src/ost-1.90.0-aa847279a9.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-pool_x64-windows/share/boost-pool/copyright
+-- Performing post-build validation
+Starting submission of boost-pool:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-pool:x64-windows: 2.5 s
+boost-pool:x64-windows package ABI: 50c4c753a967ec002ab0df56f323341cb7e2d11325485b60cf51fe388d62b621
+Completed submission of boost-proto:x64-windows@1.90.0#1 to 1 binary cache(s) in 67.5 ms
+Installing 71/111 boost-phoenix:x64-windows@1.90.0#1...
+Building boost-phoenix:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\c11fef02a7518852a8b0b7add96fee4f7c421be7: info: installing from git registry git+https://github.com/microsoft/vcpkg@c11fef02a7518852a8b0b7add96fee4f7c421be7
+Downloading https://github.com/boostorg/phoenix/archive/boost-1.90.0.tar.gz -> boostorg-phoenix-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-phoenix-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-phoenix-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-phoenix/src/ost-1.90.0-d14ad022c1.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-phoenix_x64-windows/share/boost-phoenix/copyright
+-- Performing post-build validation
+Starting submission of boost-phoenix:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-phoenix:x64-windows: 6.4 s
+boost-phoenix:x64-windows package ABI: 71348ab06a86b029a6547847b6ca876dea4a0d38119a21be8c2ef376ba9989b2
+Completed submission of boost-pool:x64-windows@1.90.0#1 to 1 binary cache(s) in 47.4 ms
+Installing 72/111 boost-endian:x64-windows@1.90.0#1...
+Building boost-endian:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\48cdf6c7ccea38184680e59e5d78dd90c343337e: info: installing from git registry git+https://github.com/microsoft/vcpkg@48cdf6c7ccea38184680e59e5d78dd90c343337e
+Downloading https://github.com/boostorg/endian/archive/boost-1.90.0.tar.gz -> boostorg-endian-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-endian-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-endian-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-endian/src/ost-1.90.0-ca22f680df.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-endian_x64-windows/share/boost-endian/copyright
+-- Performing post-build validation
+Starting submission of boost-endian:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-endian:x64-windows: 2 s
+boost-endian:x64-windows package ABI: f28701b36f59a6fcb099e019f3b3e541acee319ef7af79297e2644cffad6706b
+Completed submission of boost-phoenix:x64-windows@1.90.0#1 to 1 binary cache(s) in 142 ms
+Installing 73/111 boost-spirit:x64-windows@1.90.0#1...
+Building boost-spirit:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\1add6e97c82a5736d2e66be4a298546064a354e8: info: installing from git registry git+https://github.com/microsoft/vcpkg@1add6e97c82a5736d2e66be4a298546064a354e8
+Downloading https://github.com/boostorg/spirit/archive/boost-1.90.0.tar.gz -> boostorg-spirit-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-spirit-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-spirit-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-spirit/src/ost-1.90.0-8931e23af4.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-spirit_x64-windows/share/boost-spirit/copyright
+-- Performing post-build validation
+Starting submission of boost-spirit:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-spirit:x64-windows: 13 s
+boost-spirit:x64-windows package ABI: 420d74e95a57ccd6d88312f01e0de65a1425c0afa9205e7aedc377f3b6fac963
+Completed submission of boost-endian:x64-windows@1.90.0#1 to 1 binary cache(s) in 43.9 ms
+Installing 74/111 boost-serialization:x64-windows@1.90.0#1...
+Building boost-serialization:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\be58890c226ed96b714eb92eda245a0821a49027: info: installing from git registry git+https://github.com/microsoft/vcpkg@be58890c226ed96b714eb92eda245a0821a49027
+Downloading https://github.com/boostorg/serialization/archive/boost-1.90.0.tar.gz -> boostorg-serialization-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-serialization-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-serialization-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-serialization/src/ost-1.90.0-ff14dd9b7c.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-serialization_x64-windows/share/boost-serialization/copyright
+-- Performing post-build validation
+Starting submission of boost-serialization:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-serialization:x64-windows: 11 s
+boost-serialization:x64-windows package ABI: dd57a2a58c0ee246af27854f6ec36c3cb7673108589ff68abb518a2f6e223983
+Completed submission of boost-spirit:x64-windows@1.90.0#1 to 1 binary cache(s) in 110 ms
+Installing 75/111 boost-circular-buffer:x64-windows@1.90.0#1...
+Building boost-circular-buffer:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\339cdc881dadc38006b5e66049c982b17aa0a455: info: installing from git registry git+https://github.com/microsoft/vcpkg@339cdc881dadc38006b5e66049c982b17aa0a455
+Downloading https://github.com/boostorg/circular_buffer/archive/boost-1.90.0.tar.gz -> boostorg-circular_buffer-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-circular_buffer-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-circular_buffer-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-circular-buffer/src/ost-1.90.0-e8ba16326a.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-circular-buffer_x64-windows/share/boost-circular-buffer/copyright
+-- Performing post-build validation
+Starting submission of boost-circular-buffer:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-circular-buffer:x64-windows: 2.2 s
+boost-circular-buffer:x64-windows package ABI: d7a8262ab8730295351534f9fd2701e77d8ccc39a25a3287de787ab6e758183a
+Completed submission of boost-serialization:x64-windows@1.90.0#1 to 1 binary cache(s) in 887 ms
+Installing 76/111 boost-ptr-container:x64-windows@1.90.0#1...
+Building boost-ptr-container:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\bda9417e4db8b35eccdcdd83981b667d48f17eae: info: installing from git registry git+https://github.com/microsoft/vcpkg@bda9417e4db8b35eccdcdd83981b667d48f17eae
+Downloading https://github.com/boostorg/ptr_container/archive/boost-1.90.0.tar.gz -> boostorg-ptr_container-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-ptr_container-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-ptr_container-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-ptr-container/src/ost-1.90.0-66157df728.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-ptr-container_x64-windows/share/boost-ptr-container/copyright
+-- Performing post-build validation
+Starting submission of boost-ptr-container:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-ptr-container:x64-windows: 2.5 s
+boost-ptr-container:x64-windows package ABI: c56294840528db5b80bc8106453e6542d49f3cae0eba5d1378013fe83f8ade8f
+Completed submission of boost-circular-buffer:x64-windows@1.90.0#1 to 1 binary cache(s) in 61 ms
+Installing 77/111 boost-multi-index:x64-windows@1.90.0#1...
+Building boost-multi-index:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\8492c472fedba33e9328ff7523db0513c1f726dd: info: installing from git registry git+https://github.com/microsoft/vcpkg@8492c472fedba33e9328ff7523db0513c1f726dd
+Downloading https://github.com/boostorg/multi_index/archive/boost-1.90.0.tar.gz -> boostorg-multi_index-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-multi_index-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-multi_index-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-multi-index/src/ost-1.90.0-d7690607c1.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-multi-index_x64-windows/share/boost-multi-index/copyright
+-- Performing post-build validation
+Starting submission of boost-multi-index:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-multi-index:x64-windows: 2.8 s
+boost-multi-index:x64-windows package ABI: d98f92a15e23373a76227d0b274b6d0758396bc8e551f9cb0d41b1c1c295b1e1
+Completed submission of boost-ptr-container:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.8 ms
+Installing 78/111 boost-any:x64-windows@1.90.0#1...
+Building boost-any:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\259c8ba50d5bd0f0bd67dbb309dd40477689c666: info: installing from git registry git+https://github.com/microsoft/vcpkg@259c8ba50d5bd0f0bd67dbb309dd40477689c666
+Downloading https://github.com/boostorg/any/archive/boost-1.90.0.tar.gz -> boostorg-any-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-any-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-any-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-any/src/ost-1.90.0-3b3c4491de.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-any_x64-windows/share/boost-any/copyright
+-- Performing post-build validation
+Starting submission of boost-any:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-any:x64-windows: 2 s
+boost-any:x64-windows package ABI: 56fa44a39ceee7ba70c050def631e20e667b0ebe40f4268843d444ec67b31e0c
+Completed submission of boost-multi-index:x64-windows@1.90.0#1 to 1 binary cache(s) in 52.7 ms
+Installing 79/111 boost-property-tree:x64-windows@1.90.0#1...
+Building boost-property-tree:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\ea52a53a79ddca810aed8893e8a2a4eb5cb05e3f: info: installing from git registry git+https://github.com/microsoft/vcpkg@ea52a53a79ddca810aed8893e8a2a4eb5cb05e3f
+Downloading https://github.com/boostorg/property_tree/archive/boost-1.90.0.tar.gz -> boostorg-property_tree-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-property_tree-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-property_tree-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-property-tree/src/ost-1.90.0-205d804926.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-property-tree_x64-windows/share/boost-property-tree/copyright
+-- Performing post-build validation
+Starting submission of boost-property-tree:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-property-tree:x64-windows: 2.8 s
+boost-property-tree:x64-windows package ABI: 6920a4a5cf94bbb011431fb10f6c9584a09aa83eeeeb30421d3a7b12740a2188
+Completed submission of boost-any:x64-windows@1.90.0#1 to 1 binary cache(s) in 35.3 ms
+Installing 80/111 boost-property-map:x64-windows@1.90.0#1...
+Building boost-property-map:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\13fc29d54ca86c1fb88f21f52a49df5e574a289f: info: installing from git registry git+https://github.com/microsoft/vcpkg@13fc29d54ca86c1fb88f21f52a49df5e574a289f
+Downloading https://github.com/boostorg/property_map/archive/boost-1.90.0.tar.gz -> boostorg-property_map-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-property_map-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-property_map-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-property-map/src/ost-1.90.0-9bc6f49970.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-property-map_x64-windows/share/boost-property-map/copyright
+-- Performing post-build validation
+Starting submission of boost-property-map:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-property-map:x64-windows: 2.1 s
+boost-property-map:x64-windows package ABI: 73a61ab15063578c0013310f5a845dcb3d497e17bb331ecd57558eb4f2ac9852
+Completed submission of boost-property-tree:x64-windows@1.90.0#1 to 1 binary cache(s) in 56.9 ms
+Installing 81/111 boost-parameter:x64-windows@1.90.0#1...
+Building boost-parameter:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\10a82cb91158e7cbf45de9477f46ed7189206e62: info: installing from git registry git+https://github.com/microsoft/vcpkg@10a82cb91158e7cbf45de9477f46ed7189206e62
+Downloading https://github.com/boostorg/parameter/archive/boost-1.90.0.tar.gz -> boostorg-parameter-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-parameter-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-parameter-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-parameter/src/ost-1.90.0-ca9f45f900.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-parameter_x64-windows/share/boost-parameter/copyright
+-- Performing post-build validation
+Starting submission of boost-parameter:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-parameter:x64-windows: 3 s
+boost-parameter:x64-windows package ABI: cb8e2e0367f754a3940a3878c35e8fdb6bd98a87adfbf3f05c428285eca6fc8a
+Completed submission of boost-property-map:x64-windows@1.90.0#1 to 1 binary cache(s) in 64.8 ms
+Installing 82/111 boost-multiprecision:x64-windows@1.90.0#1...
+Building boost-multiprecision:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\85e937cd233bc9162fd5a226b5c48a103999ef26: info: installing from git registry git+https://github.com/microsoft/vcpkg@85e937cd233bc9162fd5a226b5c48a103999ef26
+Downloading https://github.com/boostorg/multiprecision/archive/boost-1.90.0.tar.gz -> boostorg-multiprecision-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-multiprecision-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-multiprecision-boost-1.90.0.tar.gz
+-- Applying patch optional-random.diff
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-multiprecision/src/ost-1.90.0-7519abcdc8.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-multiprecision_x64-windows/share/boost-multiprecision/copyright
+-- Performing post-build validation
+Starting submission of boost-multiprecision:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-multiprecision:x64-windows: 5.1 s
+boost-multiprecision:x64-windows package ABI: da2d3ccc7b239ad5ec52f76a6175f8111fec056f3e0aefb90df921733a6d2209
+Completed submission of boost-parameter:x64-windows@1.90.0#1 to 1 binary cache(s) in 53.7 ms
+Installing 83/111 boost-multi-array:x64-windows@1.90.0#1...
+Building boost-multi-array:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\e4cdcc7fd61e4b9a4b61792be7e1c0653fc19c02: info: installing from git registry git+https://github.com/microsoft/vcpkg@e4cdcc7fd61e4b9a4b61792be7e1c0653fc19c02
+Downloading https://github.com/boostorg/multi_array/archive/boost-1.90.0.tar.gz -> boostorg-multi_array-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-multi_array-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-multi_array-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-multi-array/src/ost-1.90.0-ab30e045a6.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-multi-array_x64-windows/share/boost-multi-array/copyright
+-- Performing post-build validation
+Starting submission of boost-multi-array:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-multi-array:x64-windows: 2.2 s
+boost-multi-array:x64-windows package ABI: 40c55ae8d6087b0db6598ffcd6610a0a418067f52f4bcc2d67a48bc594c0f908
+Completed submission of boost-multiprecision:x64-windows@1.90.0#1 to 1 binary cache(s) in 68.2 ms
+Installing 84/111 boost-logic:x64-windows@1.90.0#1...
+Building boost-logic:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\d223f82d69f6a18810b08df53e09092d6e623d2c: info: installing from git registry git+https://github.com/microsoft/vcpkg@d223f82d69f6a18810b08df53e09092d6e623d2c
+Downloading https://github.com/boostorg/logic/archive/boost-1.90.0.tar.gz -> boostorg-logic-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-logic-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-logic-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-logic/src/ost-1.90.0-0b1e434cf7.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-logic_x64-windows/share/boost-logic/copyright
+-- Performing post-build validation
+Starting submission of boost-logic:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-logic:x64-windows: 1.8 s
+boost-logic:x64-windows package ABI: 7a50f01df3710be1078efa96b24e2d13362369d4fbbc9ab5402fb84bf3e70405
+Completed submission of boost-multi-array:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.6 ms
+Installing 85/111 zstd:x64-windows@1.5.7...
+Building zstd:x64-windows@1.5.7...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\31b7320fab13790c6861cb3c2d50dc8f60ca3602: info: installing from git registry git+https://github.com/microsoft/vcpkg@31b7320fab13790c6861cb3c2d50dc8f60ca3602
+Downloading https://github.com/facebook/zstd/archive/v1.5.7.tar.gz -> facebook-zstd-v1.5.7.tar.gz
+Successfully downloaded facebook-zstd-v1.5.7.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/facebook-zstd-v1.5.7.tar.gz
+-- Applying patch no-static-suffix.patch
+-- Applying patch fix-emscripten-and-clang-cl.patch
+-- Applying patch fix-windows-rc-compile.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/zstd/src/v1.5.7-bb6cae2b2e.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/zstd_x64-windows/lib/pkgconfig/libzstd.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/zstd_x64-windows/debug/lib/pkgconfig/libzstd.pc
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/zstd_x64-windows/share/zstd/usage
+-- Performing post-build validation
+Starting submission of zstd:x64-windows@1.5.7 to 1 binary cache(s) in the background
+Elapsed time to handle zstd:x64-windows: 9.1 s
+zstd:x64-windows package ABI: 768f45052941da956197b7a327355b97edb96d83da439fe7cd6d4b0752b87de7
+Completed submission of boost-logic:x64-windows@1.90.0#1 to 1 binary cache(s) in 46.3 ms
+Installing 86/111 liblzma:x64-windows@5.8.3...
+Building liblzma:x64-windows@5.8.3...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\ae94eaf58eb64ce5b0dfba7769095c43c6c65d71: info: installing from git registry git+https://github.com/microsoft/vcpkg@ae94eaf58eb64ce5b0dfba7769095c43c6c65d71
+Downloading https://github.com/tukaani-project/xz/archive/v5.8.3.tar.gz -> tukaani-project-xz-v5.8.3.tar.gz
+Successfully downloaded tukaani-project-xz-v5.8.3.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/tukaani-project-xz-v5.8.3.tar.gz
+-- Applying patch build-tools.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/liblzma/src/v5.8.3-6de1f0384d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+CMake Warning at C:/_Dev/GIT/SPA/vcpkg_installed/x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:344 (message):
+  The following variables are not used in CMakeLists.txt:
+
+      XZ_SANDBOX
+
+  Please recheck them and remove the unnecessary options from the
+  `vcpkg_cmake_configure` call.
+
+  If these options should still be passed for whatever reason, please use the
+  `MAYBE_UNUSED_VARIABLES` argument.
+Call Stack (most recent call first):
+  C:/Users/Owner/AppData/Local/vcpkg/registries/git-trees/ae94eaf58eb64ce5b0dfba7769095c43c6c65d71/portfile.cmake:26 (vcpkg_cmake_configure)
+  scripts/ports.cmake:206 (include)
+
+
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/liblzma_x64-windows/lib/pkgconfig/liblzma.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/liblzma_x64-windows/debug/lib/pkgconfig/liblzma.pc
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/liblzma_x64-windows/share/liblzma/copyright
+-- Performing post-build validation
+Starting submission of liblzma:x64-windows@5.8.3 to 1 binary cache(s) in the background
+Elapsed time to handle liblzma:x64-windows: 11 s
+liblzma:x64-windows package ABI: c527dd8f3737736cc1f47f5bbd24e258ac24a3e5d25735c2226697c6dfd7ad72
+Completed submission of zstd:x64-windows@1.5.7 to 1 binary cache(s) in 267 ms
+Installing 87/111 bzip2[core,tool]:x64-windows@1.0.8#6...
+Building bzip2[core,tool]:x64-windows@1.0.8#6...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\2d029da682847c5ebdc54e4dbea001331a02207e: info: installing from git registry git+https://github.com/microsoft/vcpkg@2d029da682847c5ebdc54e4dbea001331a02207e
+Downloading bzip2-1.0.8.tar.gz, trying https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+Successfully downloaded bzip2-1.0.8.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/bzip2-1.0.8.tar.gz
+-- Applying patch fix-import-export-macros.patch
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/bzip2/src/bzip2-1-336d4794a3.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/bzip2_x64-windows/lib/pkgconfig/bzip2.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/bzip2_x64-windows/debug/lib/pkgconfig/bzip2.pc
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/bzip2_x64-windows/share/bzip2/copyright
+-- Performing post-build validation
+Starting submission of bzip2[core,tool]:x64-windows@1.0.8#6 to 1 binary cache(s) in the background
+Elapsed time to handle bzip2:x64-windows: 4.5 s
+bzip2:x64-windows package ABI: bd9ac52ce66def7376a4eead225595ebbb81faef870ccb1559c00a53e2d385cc
+Completed submission of liblzma:x64-windows@5.8.3 to 1 binary cache(s) in 160 ms
+Installing 88/111 boost-iostreams[bzip2,core,lzma,zlib,zstd]:x64-windows@1.90.0#1...
+Building boost-iostreams[bzip2,core,lzma,zlib,zstd]:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\c52c4c054f7b7a7cb895c3cf81664c8043e8af26: info: installing from git registry git+https://github.com/microsoft/vcpkg@c52c4c054f7b7a7cb895c3cf81664c8043e8af26
+Downloading https://github.com/boostorg/iostreams/archive/boost-1.90.0.tar.gz -> boostorg-iostreams-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-iostreams-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-iostreams-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-iostreams/src/ost-1.90.0-10136fcbda.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-iostreams_x64-windows/share/boost-iostreams/copyright
+-- Performing post-build validation
+Starting submission of boost-iostreams[bzip2,core,lzma,zlib,zstd]:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-iostreams:x64-windows: 8 s
+boost-iostreams:x64-windows package ABI: ecd96c1caf8bf2819473bc760492acf6472bf92cd4e83aaa88534968ab725249
+Completed submission of bzip2[core,tool]:x64-windows@1.0.8#6 to 1 binary cache(s) in 90.6 ms
+Installing 89/111 boost-heap:x64-windows@1.90.0#1...
+Building boost-heap:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\c166917ace3f03acb634cdb68fb46f2f32b33501: info: installing from git registry git+https://github.com/microsoft/vcpkg@c166917ace3f03acb634cdb68fb46f2f32b33501
+Downloading https://github.com/boostorg/heap/archive/boost-1.90.0.tar.gz -> boostorg-heap-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-heap-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-heap-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-heap/src/ost-1.90.0-688069349a.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-heap_x64-windows/share/boost-heap/copyright
+-- Performing post-build validation
+Starting submission of boost-heap:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-heap:x64-windows: 2.2 s
+boost-heap:x64-windows package ABI: b2d53d272f013369431cc33bbef3906e3b056f6b73ba30c887008d183dd39aac
+Completed submission of boost-iostreams[bzip2,core,lzma,zlib,zstd]:x64-windows@1.90.0#1 to 1 binary cache(s) in 219 ms
+Installing 90/111 boost-xpressive:x64-windows@1.90.0#1...
+Building boost-xpressive:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\b3e28be0bfea5df9f2a8f9b274d08c0e12f11917: info: installing from git registry git+https://github.com/microsoft/vcpkg@b3e28be0bfea5df9f2a8f9b274d08c0e12f11917
+Downloading https://github.com/boostorg/xpressive/archive/boost-1.90.0.tar.gz -> boostorg-xpressive-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-xpressive-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-xpressive-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-xpressive/src/ost-1.90.0-6f50ce826d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-xpressive_x64-windows/share/boost-xpressive/copyright
+-- Performing post-build validation
+Starting submission of boost-xpressive:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-xpressive:x64-windows: 3.3 s
+boost-xpressive:x64-windows package ABI: 8836aa5c26288caedff2d1d2f47decd774d0bd6212431f955b238713e381bef7
+Completed submission of boost-heap:x64-windows@1.90.0#1 to 1 binary cache(s) in 43.4 ms
+Installing 91/111 boost-tti:x64-windows@1.90.0#1...
+Building boost-tti:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\588fcdc557083ba15d53f09526ae7c9cbf4a1a9a: info: installing from git registry git+https://github.com/microsoft/vcpkg@588fcdc557083ba15d53f09526ae7c9cbf4a1a9a
+Downloading https://github.com/boostorg/tti/archive/boost-1.90.0.tar.gz -> boostorg-tti-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-tti-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-tti-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-tti/src/ost-1.90.0-96479035f5.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-tti_x64-windows/share/boost-tti/copyright
+-- Performing post-build validation
+Starting submission of boost-tti:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-tti:x64-windows: 2.4 s
+boost-tti:x64-windows package ABI: e94514e0741e4583d94a3be094147a364b86c2339233bcc1eeec6125ffb5c51e
+Completed submission of boost-xpressive:x64-windows@1.90.0#1 to 1 binary cache(s) in 63.6 ms
+Installing 92/111 boost-foreach:x64-windows@1.90.0#1...
+Building boost-foreach:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\540a49f1bed7a9b648eb545c000adb1c7de7194c: info: installing from git registry git+https://github.com/microsoft/vcpkg@540a49f1bed7a9b648eb545c000adb1c7de7194c
+Downloading https://github.com/boostorg/foreach/archive/boost-1.90.0.tar.gz -> boostorg-foreach-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-foreach-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-foreach-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-foreach/src/ost-1.90.0-18590b244e.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-foreach_x64-windows/share/boost-foreach/copyright
+-- Performing post-build validation
+Starting submission of boost-foreach:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-foreach:x64-windows: 1.8 s
+boost-foreach:x64-windows package ABI: 4f0b02db47cee1887e8ff942a19d4b68458898b402da01ad1b4d7db1007ed3d4
+Completed submission of boost-tti:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.5 ms
+Installing 93/111 boost-bimap:x64-windows@1.90.0#1...
+Building boost-bimap:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\345e0b07d64fd23f0ae874f51b92bca1fa490684: info: installing from git registry git+https://github.com/microsoft/vcpkg@345e0b07d64fd23f0ae874f51b92bca1fa490684
+Downloading https://github.com/boostorg/bimap/archive/boost-1.90.0.tar.gz -> boostorg-bimap-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-bimap-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-bimap-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-bimap/src/ost-1.90.0-b480770037.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-bimap_x64-windows/share/boost-bimap/copyright
+-- Performing post-build validation
+Starting submission of boost-bimap:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-bimap:x64-windows: 3.2 s
+boost-bimap:x64-windows package ABI: 9d585cad3751d5460bc5b9826398d778700bf706adc65f77b17c25cd3a6b53b3
+Completed submission of boost-foreach:x64-windows@1.90.0#1 to 1 binary cache(s) in 35.4 ms
+Installing 94/111 boost-graph:x64-windows@1.90.0#1...
+Building boost-graph:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\83a81d293ce910fd345afadde79b857acc2b8835: info: installing from git registry git+https://github.com/microsoft/vcpkg@83a81d293ce910fd345afadde79b857acc2b8835
+Downloading https://github.com/boostorg/graph/archive/boost-1.90.0.tar.gz -> boostorg-graph-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-graph-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-graph-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-graph/src/ost-1.90.0-6517e07c27.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-graph_x64-windows/share/boost-graph/copyright
+-- Performing post-build validation
+Starting submission of boost-graph:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-graph:x64-windows: 13 s
+boost-graph:x64-windows package ABI: baa24c7638fb81c0d52a4b53d1c9388ad54e5f236b9f2e9fb420f5ecc0bce401
+Completed submission of boost-bimap:x64-windows@1.90.0#1 to 1 binary cache(s) in 50.9 ms
+Installing 95/111 boost-rational:x64-windows@1.90.0#1...
+Building boost-rational:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\524b14719856f3c2eea524822826b6e5e85150f9: info: installing from git registry git+https://github.com/microsoft/vcpkg@524b14719856f3c2eea524822826b6e5e85150f9
+Downloading https://github.com/boostorg/rational/archive/boost-1.90.0.tar.gz -> boostorg-rational-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-rational-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-rational-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-rational/src/ost-1.90.0-a3385dcf8c.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-rational_x64-windows/share/boost-rational/copyright
+-- Performing post-build validation
+Starting submission of boost-rational:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-rational:x64-windows: 1.9 s
+boost-rational:x64-windows package ABI: 557ebc010db4f7c1a9bc8c13533da03b2e6c44a15c7331c4006ac29a9e45fcd0
+Completed submission of boost-graph:x64-windows@1.90.0#1 to 1 binary cache(s) in 747 ms
+Installing 96/111 boost-qvm:x64-windows@1.90.0#1...
+Building boost-qvm:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\c2a85b7c65ba3926fceb960233d71b130915a3a6: info: installing from git registry git+https://github.com/microsoft/vcpkg@c2a85b7c65ba3926fceb960233d71b130915a3a6
+Downloading https://github.com/boostorg/qvm/archive/boost-1.90.0.tar.gz -> boostorg-qvm-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-qvm-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-qvm-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-qvm/src/ost-1.90.0-795ca2ebed.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-qvm_x64-windows/share/boost-qvm/copyright
+-- Performing post-build validation
+Starting submission of boost-qvm:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-qvm:x64-windows: 2.9 s
+boost-qvm:x64-windows package ABI: 2e5ef09c966aa9b9807425ce7e9ceddac09f78a6d65d689eb8e25499624b8a8e
+Completed submission of boost-rational:x64-windows@1.90.0#1 to 1 binary cache(s) in 36.3 ms
+Installing 97/111 boost-program-options:x64-windows@1.90.0#1...
+Building boost-program-options:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\5ddaece880235f21a913176f42774d1930c7ba79: info: installing from git registry git+https://github.com/microsoft/vcpkg@5ddaece880235f21a913176f42774d1930c7ba79
+Downloading https://github.com/boostorg/program_options/archive/boost-1.90.0.tar.gz -> boostorg-program_options-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-program_options-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-program_options-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-program-options/src/ost-1.90.0-3d07e5cf31.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-program-options_x64-windows/share/boost-program-options/copyright
+-- Performing post-build validation
+Starting submission of boost-program-options:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-program-options:x64-windows: 5.5 s
+boost-program-options:x64-windows package ABI: 1c298462a4aa4d60224ec4c67f6ffb9f9be4c09485a10db8b5c38182c0606d5b
+Completed submission of boost-qvm:x64-windows@1.90.0#1 to 1 binary cache(s) in 85.8 ms
+Installing 98/111 boost-polygon:x64-windows@1.90.0#1...
+Building boost-polygon:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\5a885da0a03975f310fe25f3cc53f32b1034c7fe: info: installing from git registry git+https://github.com/microsoft/vcpkg@5a885da0a03975f310fe25f3cc53f32b1034c7fe
+Downloading https://github.com/boostorg/polygon/archive/boost-1.90.0.tar.gz -> boostorg-polygon-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-polygon-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-polygon-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-polygon/src/ost-1.90.0-0b526210d4.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-polygon_x64-windows/share/boost-polygon/copyright
+-- Performing post-build validation
+Starting submission of boost-polygon:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-polygon:x64-windows: 4.1 s
+boost-polygon:x64-windows package ABI: c6f4fa0a5d7fe14938886a5564640e4f48b4595c4e6c4caab404b6cff4a64087
+Completed submission of boost-program-options:x64-windows@1.90.0#1 to 1 binary cache(s) in 533 ms
+Installing 99/111 boost-crc:x64-windows@1.90.0#1...
+Building boost-crc:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\99195bd3325a059c84648b65ffb37e884dab1b00: info: installing from git registry git+https://github.com/microsoft/vcpkg@99195bd3325a059c84648b65ffb37e884dab1b00
+Downloading https://github.com/boostorg/crc/archive/boost-1.90.0.tar.gz -> boostorg-crc-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-crc-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-crc-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-crc/src/ost-1.90.0-504835c820.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-crc_x64-windows/share/boost-crc/copyright
+-- Performing post-build validation
+Starting submission of boost-crc:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-crc:x64-windows: 1.9 s
+boost-crc:x64-windows package ABI: 2f0c8266079cddd72ad4b07f4206634fe7d63820b14bac69a37743fbbaf84ebb
+Completed submission of boost-polygon:x64-windows@1.90.0#1 to 1 binary cache(s) in 62.4 ms
+Installing 100/111 boost-geometry:x64-windows@1.90.0#1...
+Building boost-geometry:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\8b570d8550070d9ddda2d117f17a8aaf86e3fc96: info: installing from git registry git+https://github.com/microsoft/vcpkg@8b570d8550070d9ddda2d117f17a8aaf86e3fc96
+Downloading https://github.com/boostorg/geometry/archive/boost-1.90.0.tar.gz -> boostorg-geometry-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-geometry-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-geometry-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-geometry/src/ost-1.90.0-eca08a31bb.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-geometry_x64-windows/share/boost-geometry/copyright
+-- Performing post-build validation
+Starting submission of boost-geometry:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-geometry:x64-windows: 15 s
+boost-geometry:x64-windows package ABI: d1d716cae8afa5282d8b7d64ee9055f2f101de0e3e6d185f1773727e63482cec
+Completed submission of boost-crc:x64-windows@1.90.0#1 to 1 binary cache(s) in 36 ms
+Installing 101/111 boost-format:x64-windows@1.90.0#1...
+Building boost-format:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\7f4cc9fcdd80eab65fc4812efd37658a1942b37e: info: installing from git registry git+https://github.com/microsoft/vcpkg@7f4cc9fcdd80eab65fc4812efd37658a1942b37e
+Downloading https://github.com/boostorg/format/archive/boost-1.90.0.tar.gz -> boostorg-format-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-format-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-format-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-format/src/ost-1.90.0-cf34d61160.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-format_x64-windows/share/boost-format/copyright
+-- Performing post-build validation
+Starting submission of boost-format:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-format:x64-windows: 2.2 s
+boost-format:x64-windows package ABI: dcb330817d024b68abb03afe4d56b9471950813e042692fee3566b3bf4b62fb0
+Completed submission of boost-geometry:x64-windows@1.90.0#1 to 1 binary cache(s) in 167 ms
+Installing 102/111 boost-scope:x64-windows@1.90.0#1...
+Building boost-scope:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\ed3b69620db418d61bebf587081b9baa68e6850f: info: installing from git registry git+https://github.com/microsoft/vcpkg@ed3b69620db418d61bebf587081b9baa68e6850f
+Downloading https://github.com/boostorg/scope/archive/boost-1.90.0.tar.gz -> boostorg-scope-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-scope-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-scope-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-scope/src/ost-1.90.0-1fecf12bbb.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-scope_x64-windows/share/boost-scope/copyright
+-- Performing post-build validation
+Starting submission of boost-scope:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-scope:x64-windows: 2.4 s
+boost-scope:x64-windows package ABI: 1dfb3cee232032761d79e0d213b01c2ec704dcc1f91736f4f690ab6db4af5cdc
+Completed submission of boost-format:x64-windows@1.90.0#1 to 1 binary cache(s) in 53.1 ms
+Installing 103/111 boost-filesystem:x64-windows@1.90.0#1...
+Building boost-filesystem:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\a8478d374772ecdc58a573a1fd05436749534353: info: installing from git registry git+https://github.com/microsoft/vcpkg@a8478d374772ecdc58a573a1fd05436749534353
+Downloading https://github.com/boostorg/filesystem/archive/boost-1.90.0.tar.gz -> boostorg-filesystem-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-filesystem-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-filesystem-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-filesystem/src/ost-1.90.0-abc69df93d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-filesystem_x64-windows/share/boost-filesystem/copyright
+-- Performing post-build validation
+Starting submission of boost-filesystem:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-filesystem:x64-windows: 9.3 s
+boost-filesystem:x64-windows package ABI: f8d58926d0246a13cfca8620978387a2e75c614840cd53f9d0ca0b20dda774a0
+Completed submission of boost-scope:x64-windows@1.90.0#1 to 1 binary cache(s) in 56.4 ms
+Installing 104/111 boost-callable-traits:x64-windows@1.90.0#1...
+Building boost-callable-traits:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\4a87c51eee4bdc0f385a3b9596f8d5be133081ca: info: installing from git registry git+https://github.com/microsoft/vcpkg@4a87c51eee4bdc0f385a3b9596f8d5be133081ca
+Downloading https://github.com/boostorg/callable_traits/archive/boost-1.90.0.tar.gz -> boostorg-callable_traits-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-callable_traits-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-callable_traits-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-callable-traits/src/ost-1.90.0-706f5d76e3.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-callable-traits_x64-windows/share/boost-callable-traits/copyright
+-- Performing post-build validation
+Starting submission of boost-callable-traits:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-callable-traits:x64-windows: 2.6 s
+boost-callable-traits:x64-windows package ABI: 92150ef6d896f006416024ad0450574061010c4945473014669f5c8727c40389
+Completed submission of boost-filesystem:x64-windows@1.90.0#1 to 1 binary cache(s) in 353 ms
+Installing 105/111 boost-interval:x64-windows@1.90.0#1...
+Building boost-interval:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\af30f16fc7e25e471e2aae35b5206cacde61916f: info: installing from git registry git+https://github.com/microsoft/vcpkg@af30f16fc7e25e471e2aae35b5206cacde61916f
+Downloading https://github.com/boostorg/interval/archive/boost-1.90.0.tar.gz -> boostorg-interval-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-interval-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-interval-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-interval/src/ost-1.90.0-464836444a.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-interval_x64-windows/share/boost-interval/copyright
+-- Performing post-build validation
+Starting submission of boost-interval:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-interval:x64-windows: 2.4 s
+boost-interval:x64-windows package ABI: d17f4d39a5d5842ff5c87cfea2e52d0df733620a355fbd5ecbb6780b639bd26f
+Completed submission of boost-callable-traits:x64-windows@1.90.0#1 to 1 binary cache(s) in 52.9 ms
+Installing 106/111 boost-uuid:x64-windows@1.90.0#1...
+Building boost-uuid:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\bb57363929104844e406e567595466a1267b2868: info: installing from git registry git+https://github.com/microsoft/vcpkg@bb57363929104844e406e567595466a1267b2868
+Downloading https://github.com/boostorg/uuid/archive/boost-1.90.0.tar.gz -> boostorg-uuid-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-uuid-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-uuid-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-uuid/src/ost-1.90.0-6a985bdd78.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-uuid_x64-windows/share/boost-uuid/copyright
+-- Performing post-build validation
+Starting submission of boost-uuid:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-uuid:x64-windows: 2.5 s
+boost-uuid:x64-windows package ABI: 9086901dc9fece1447463a3e979ea434e9e808a3426c4691ccdfddcd347b9401
+Completed submission of boost-interval:x64-windows@1.90.0#1 to 1 binary cache(s) in 53.4 ms
+Installing 107/111 boost-compute:x64-windows@1.90.0#1...
+Building boost-compute:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\90e906919db39ecf72c3cc01fafdf54f88183966: info: installing from git registry git+https://github.com/microsoft/vcpkg@90e906919db39ecf72c3cc01fafdf54f88183966
+Downloading https://github.com/boostorg/compute/archive/boost-1.90.0.tar.gz -> boostorg-compute-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-compute-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-compute-boost-1.90.0.tar.gz
+-- Applying patch opt-filesystem.diff
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-compute/src/ost-1.90.0-4390d749f3.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-compute_x64-windows/share/boost-compute/copyright
+-- Performing post-build validation
+Starting submission of boost-compute:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-compute:x64-windows: 5.9 s
+boost-compute:x64-windows package ABI: 634af7ba6732333335d646bc4d90ae4a0ce059be63c36f299debb69b85674e45
+Completed submission of boost-uuid:x64-windows@1.90.0#1 to 1 binary cache(s) in 69.3 ms
+Installing 108/111 boost-ublas:x64-windows@1.90.0#1...
+Building boost-ublas:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\549fe43cc5a3455dd684d7c2d4bbe57daaf3d031: info: installing from git registry git+https://github.com/microsoft/vcpkg@549fe43cc5a3455dd684d7c2d4bbe57daaf3d031
+Downloading https://github.com/boostorg/ublas/archive/boost-1.90.0.tar.gz -> boostorg-ublas-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-ublas-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-ublas-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-ublas/src/ost-1.90.0-d2a65f4d1f.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-ublas_x64-windows/share/boost-ublas/copyright
+-- Performing post-build validation
+Starting submission of boost-ublas:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-ublas:x64-windows: 4 s
+boost-ublas:x64-windows package ABI: 00428429af76dfd04a7ce49bae39b0a1918d796b4c4317815228224648006517
+Completed submission of boost-compute:x64-windows@1.90.0#1 to 1 binary cache(s) in 67.5 ms
+Installing 109/111 boost-accumulators:x64-windows@1.90.0#1...
+Building boost-accumulators:x64-windows@1.90.0#1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\d3b5d9441801be98690488ff1a72781d997714c2: info: installing from git registry git+https://github.com/microsoft/vcpkg@d3b5d9441801be98690488ff1a72781d997714c2
+Downloading https://github.com/boostorg/accumulators/archive/boost-1.90.0.tar.gz -> boostorg-accumulators-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-accumulators-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/boostorg-accumulators-boost-1.90.0.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/boost-accumulators/src/ost-1.90.0-c22ef2f2ab.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/boost-accumulators_x64-windows/share/boost-accumulators/copyright
+-- Performing post-build validation
+Starting submission of boost-accumulators:x64-windows@1.90.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle boost-accumulators:x64-windows: 3.4 s
+boost-accumulators:x64-windows package ABI: f770d29272266f9911ccfb3b898cf5ed7e0af0cdf83d0246a1a360e9e778d9f1
+Completed submission of boost-ublas:x64-windows@1.90.0#1 to 1 binary cache(s) in 69.5 ms
+Installing 110/111 cgal:x64-windows@6.1.1...
+Building cgal:x64-windows@6.1.1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\33b5e18224511e28d32bbf14dc081695d3c68f44: info: installing from git registry git+https://github.com/microsoft/vcpkg@33b5e18224511e28d32bbf14dc081695d3c68f44
+Downloading https://github.com/CGAL/cgal/archive/v6.1.1.tar.gz -> CGAL-cgal-v6.1.1.tar.gz
+Successfully downloaded CGAL-cgal-v6.1.1.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/CGAL-cgal-v6.1.1.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/cgal/src/v6.1.1-80f9146e09.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/cgal_x64-windows/share/cgal/usage
+-- Performing post-build validation
+Starting submission of cgal:x64-windows@6.1.1 to 1 binary cache(s) in the background
+Elapsed time to handle cgal:x64-windows: 1.5 min
+cgal:x64-windows package ABI: 02c3c1ad8712fa0d4219e6c18cc48a0820543208a570464d0752d0633c075692
+Completed submission of boost-accumulators:x64-windows@1.90.0#1 to 1 binary cache(s) in 54.6 ms
+Installing 111/111 eigen3:x64-windows@5.0.1...
+Building eigen3:x64-windows@5.0.1...
+C:\Users\Owner\AppData\Local\vcpkg\registries\git-trees\d76be65aad61fe24ae3d70c10fca0bd2c592308e: info: installing from git registry git+https://github.com/microsoft/vcpkg@d76be65aad61fe24ae3d70c10fca0bd2c592308e
+CMake Warning at scripts/cmake/vcpkg_buildpath_length_warning.cmake:4 (message):
+  eigen3's buildsystem uses very long paths and may fail on your system.
+
+  We recommend moving vcpkg to a short path such as 'C:\src\vcpkg' or using
+  the subst command.
+Call Stack (most recent call first):
+  C:/Users/Owner/AppData/Local/vcpkg/registries/git-trees/d76be65aad61fe24ae3d70c10fca0bd2c592308e/portfile.cmake:1 (vcpkg_buildpath_length_warning)
+  scripts/ports.cmake:206 (include)
+
+
+Downloading https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz -> libeigen-eigen-5.0.1.tar.gz
+Successfully downloaded libeigen-eigen-5.0.1.tar.gz
+-- Extracting source C:/Users/Owner/AppData/Local/vcpkg/downloads/libeigen-eigen-5.0.1.tar.gz
+-- Using source at C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/blds/eigen3/src/5.0.1-d487a628b0.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/eigen3_x64-windows/lib/pkgconfig/eigen3.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Owner/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/_Dev/GIT/SPA/vcpkg_installed/vcpkg/pkgs/eigen3_x64-windows/debug/lib/pkgconfig/eigen3.pc
+-- Performing post-build validation
+Starting submission of eigen3:x64-windows@5.0.1 to 1 binary cache(s) in the background
+Elapsed time to handle eigen3:x64-windows: 10 s
+eigen3:x64-windows package ABI: c13adb601a1cc14f47aa7faa9fdaee72b0b7315a8c166547b0254184a806f856
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
+Packages installed in this vcpkg installation declare the following licenses:
+(BSD-3-Clause OR GPL-2.0-only)
+(LGPL-3.0-only OR GPL-2.0-only)
+BSL-1.0
+GPL-3.0-or-later
+LGPL-3.0-or-later
+MIT
+MPL-2.0
+Zlib
+bzip2-1.0.6
+The package cgal provides CMake targets:
+
+    find_package(CGAL CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE CGAL::CGAL)
+
+
+eigen3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Eigen3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Eigen3::Eigen)
+
+eigen3 provides pkg-config modules:
+
+  # A C++ template library for linear algebra: vectors, matrices, and related algorithms
+  eigen3
+
+Completed submission of cgal:x64-windows@6.1.1 to 1 binary cache(s) in 350 ms
+Waiting for 1 remaining binary cache submissions...
+Completed submission of eigen3:x64-windows@5.0.1 to 1 binary cache(s) in 144 ms (1/1)
+All requested installations completed successfully in: 22 min
