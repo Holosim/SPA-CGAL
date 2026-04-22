@@ -1,0 +1,57 @@
+
+* Goal: The overall goal of this C++ tool (later an Unreal Engine 5 plugin) that generates a single closed “stroke” mesh representing the volume swept by a moving “brush” mesh with time-varying translation/rotation (scale assumed static).
+* Motivation: replace the current “thousands of duplicates” sampling method used in theme park ride vehicle and animated figure analysis, which wastes memory, keeps interior polygons, produces alias-like jagged outer surfaces, and is slow for interference checks.
+
+* Core idea: **leading-edge extrusion** instead of full-mesh duplication per frame.
+
+  * Sample motion at times $t_0 \ldots t_n$.
+  * For each interval $[t_i,t_{i+1}]$, compute motion direction \(\mathbf d_i\) (e.g., $T(t_{i+1})-T(t_i)$; refine with per-polygon centroid motion when rotation is significant).
+  * For each polygon at $t_i$, transform its normal to world space; if \(\mathbf n_p \cdot \mathbf d_i > \epsilon\), mark as “leading edge”.
+  * Extrude each leading polygon from pose at $t_i$ to its pose at $t_{i+1}$ by connecting corresponding vertices and triangulating side faces → a watertight prism-like volume.
+  * Ignore polygons where \(\mathbf n_p \cdot \mathbf d_i \le \epsilon\); handle sign changes between frames by evaluating each interval independently.
+* Accumulation: store **only** these extruded volumes across all intervals; do **not** store full duplicated meshes.
+* Union step (main challenge): boolean-union all extruded volumes into one closed manifold.
+
+  * Option A: Prefer using Unreal Engine 5.4 Geometry Scripting with a blend of C++ and blueprints
+  * Option B: **CGAL** (Nef polyhedra / Surface_mesh / PMP booleans). 
+* Optimization/cleanup after union:
+
+  * Heal/repair: remove degenerate/zero-area faces, stitch small holes, merge near-duplicate vertices.
+  * Remesh/decimate: reduce overly dense regions; target manifold quality for reliable collision tests.
+  * Watch for “rat’s nest” topologies, overlapping faces, and self-intersections from backtracking motion.
+* Edge cases considered:
+
+  * Polygons perpendicular to motion ($\approx 0$ dot product) → ignore with margin \(\epsilon\).
+  * Significant rotation: derive \(\mathbf d_i\) from polygon/vertex motion, not just root translation.
+  * Paths that double back or occupy prior space; ensure union handles self-overlap.
+* Output characteristics: a **closed, manifold, smooth** stroke mesh suitable for fast interference/collision checks against surrounding structures.
+* File formats:
+
+  * Option A: Prefer **USD** for industry-wide compatibility; 
+  * Option B: **FBX** for Unreal pipeline compatibility;  
+* Libraries & architecture:
+
+  * Mesh I/O: **Assimp** (reads glTF/FBX/OBJ, etc.).
+  * Geometry: **CGAL** (booleans, cleanup, simplification) or **OpenVDB** (voxel union + isosurface).
+  * Data types: `Mesh` (verts/indices), `Transform` (T+R+scale), `AnimationCurve` (keyframes).
+* Baseline implementation notes (VS2022):
+
+  * Prefer Visual Studio for coding interface. 
+  * Prototype includes loading brush, sampling transforms, producing extruded volumes, exporting result.
+* Testing plan:
+
+  * Start with cube/sphere brush and simple translations/rotations.
+  * Visual check in Blender/Unreal; verify manifoldness; measure polygon counts vs. naive duplication.
+* Unreal Engine integration (5.4+): 
+
+  * Wrap as C++ plugin/module; expose Blueprint nodes to:
+
+    * Select brush mesh (asset or file) & animation/curves.
+    * Run leading-edge extrusion + union.
+    * Emit new `UStaticMesh` asset.
+  * Provide Editor Utility Widget/Mode for artist workflow; include “draft” mode (coarser sampling or voxel union) for speed.
+* Performance considerations:
+
+  * Parallelize per-interval extrusion and batched unions.
+  * Offer adjustable sampling rate and voxel resolution; cache intermediate results.
+* Current state: canvas document updated/cleaned; refined algorithm centered on leading-edge extrusion with epsilon handling, robust union, and post-union cleanup; clear path to UE integration.
