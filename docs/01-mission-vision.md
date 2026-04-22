@@ -51,6 +51,8 @@ The following criteria define "done" for the initial production release of the S
 | SC-09 | All geometry processing is encapsulated behind a well-defined interface; the CGAL backend can be replaced by an alternative library (e.g., OpenVDB, OCCT) without redesigning the SPA component | Architecture |
 | SC-10 | The component displays on-screen warnings in the Editor for: (a) resource limits reached / dynamic quality degradation active, (b) unsupported mesh type attached (soft-body, cloth, fluid body, non-affine rigged mesh); warnings remain visible for 15 seconds and are also logged to the Output panel | Usability |
 | SC-11 | The standalone CGAL CLI tool (current prototype) continues to function as a reproducible offline reference implementation | Compatibility |
+| SC-12 | The SPM overlay shall remain visible at all times while enabled, including during background recomputation; the display shall never flicker, blank, or show an empty overlay while an update is in progress | Stability / UX |
+| SC-13 | The SPM overlay shall communicate its staleness state visually via a configurable hue shift (default: red/orange tint) while recomputation is in progress, reverting to its normal color when the updated SPM is ready and swapped in | Usability |
 
 ---
 
