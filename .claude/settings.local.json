@@ -7,7 +7,10 @@
       "Read(//c/dev/git/**)",
       "Read(//mnt/c/_Dev/GIT/**)",
       "Bash(git -C \"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg\" rev-parse HEAD)",
-      "Bash(git -C /c/_Dev/lib/vcpkg rev-parse HEAD)"
+      "Bash(git -C /c/_Dev/lib/vcpkg rev-parse HEAD)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit *)"
     ]
   }
 }

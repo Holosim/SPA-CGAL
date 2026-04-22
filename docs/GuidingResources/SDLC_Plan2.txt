@@ -1,0 +1,167 @@
+SDLC Plan — SPA-CGAL / Swept Path Analysis                                                                                 
+  
+ Context
+
+ The user has a working CGAL-based C++ prototype that proves the swept path concept: given a 3D mesh and a sequence of 4×4  
+ affine transforms, it unions transformed copies to produce a Swept Path Model (SPM). The long-term target is a real-time   
+ UE5 component that animators can attach to any actor to visualize the swept volume across a configurable time window as    
+ they adjust keyframes.
+
+ The user wants to apply a formal 15-stage SDLC to this project, with document artifacts produced before significant        
+ production code is written. The existing code is treated as a proof-of-concept spike, not production code. All artifacts   
+ live in the repo (docs/ in Markdown + Mermaid/PlantUML), with a parallel export path to PDF/HTML for stakeholders.
+
+ ---
+ Recommended SDLC Pipeline (with rationale for changes)
+
+ Changes from the user's original pipeline are noted with ▲ (addition/change) or ▽ (removal/merge).
+
+ ┌─────┬────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────┐    
+ │  #  │                             Stage                              │             Change from Original             │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 1   │ Define Mission, Vision & Success Criteria                      │ Minor rename — add "Success Criteria"        │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 2   │ Identify Stakeholders & Use Cases                              │ Unchanged                                    │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 3   │ Capture Requirements (Functional + Non-Functional)             │ Unchanged                                    │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 4   │ ▲ Define V&V Strategy & Acceptance Criteria                    │ New — moved test planning before design      │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 5   │ Define System Boundaries & External Interfaces                 │ Unchanged                                    │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 6   │ Abstract Data Model (Entities, Relationships, State)           │ Minor rename — add "State"                   │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 7   │ Abstract Functional Model (Behaviors, Services,                │ Unchanged                                    │    
+ │     │ Responsibilities)                                              │                                              │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 8   │ Establish Architecture (Patterns, Layers, Technology           │ Add "Technology Selection"                   │    
+ │     │ Selection)                                                     │                                              │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 9   │ ▲ Synthesize & Baseline Design Artifacts                       │ Renamed from "Develop Formal Design          │    
+ │     │                                                                │ Artifacts"                                   │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 10  │ Map to Implementation Constructs (C++ classes, interfaces,     │ Unchanged                                    │    
+ │     │ APIs)                                                          │                                              │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 11  │ Build Core Infrastructure & Architectural Spike                │ Minor rename — add "Architectural Spike"     │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 12  │ Implement Feature Modules Iteratively                          │ Unchanged                                    │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 13  │ Integrate External Systems & Feedback Loops                    │ Renamed (more general than "feedback loops") │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 14  │ Execute V&V Against Requirements                               │ Renamed from "Validate Against Requirements" │    
+ ├─────┼────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────┤    
+ │ 15  │ Optimize, Deploy, Monitor & Iterate                            │ Minor rename                                 │    
+ └─────┴────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────┘    
+
+ Key rationale
+
+ - Stage 4 added (V&V Strategy early): Defining how you'll validate a requirement is a design activity, not an
+ afterthought. For SPA, the acceptance criteria for "real-time" performance need to be established before architecture      
+ choices are made — those criteria will directly determine whether CGAL is viable at all.
+ - Stage 9 renamed: UML/SysML diagrams are produced during stages 6–8, not as a separate step afterward. Stage 9 is now a   
+ synthesis gate — review, reconcile, and formally baseline the artifacts from 5–8 into a coherent design package before     
+ implementation begins.
+ - Stage 11 adds "Architectural Spike": The biggest technical risk is whether CGAL mesh boolean ops can meet real-time      
+ performance targets inside UE5. Stage 11 must include a focused spike to answer this before full feature development.      
+ - Stage 13 generalized: "Feedback loops" is UE5-integration-specific language. The broader label covers both the UE5       
+ integration and any future integrations without changing the intent.
+ - Risk management is omitted as a discrete stage — it is a continuous activity beginning at Stage 3. Each stage document   
+ should include a risk delta section noting new risks identified and mitigations decided.
+
+ ---
+ Artifact Plan
+
+ All artifacts go in docs/ as Markdown. Diagrams use Mermaid (flowcharts, ER, context, sequence) and/or PlantUML (detailed  
+ UML class, component, state machine). Export to PDF/HTML is a later concern.
+
+ ┌───────┬───────────────────────────────────────────────┬─────────────────────────────────────────────────────────────┐    
+ │ Stage │                     File                      │                          Contents                           │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 1     │ docs/01-mission-vision.md                     │ Problem statement, vision statement, success criteria,      │    
+ │       │                                               │ out-of-scope                                                │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 2     │ docs/02-stakeholders-use-cases.md             │ Stakeholder table, use case list, use case diagram          │    
+ │       │                                               │ (Mermaid)                                                   │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 3     │ docs/03-requirements.md                       │ Functional requirements (FR-xxx), non-functional            │    
+ │       │                                               │ requirements (NFR-xxx), constraints                         │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 4     │ docs/04-validation-strategy.md                │ Test types, acceptance criteria per NFR, V&V matrix, open   │    
+ │       │                                               │ questions                                                   │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 5     │ docs/05-system-boundaries.md                  │ Context diagram (Mermaid C4), external interfaces,          │    
+ │       │                                               │ integration points                                          │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 6     │ docs/06-data-model.md                         │ Entity table, ER diagram (Mermaid), state diagrams for key  │    
+ │       │                                               │ entities                                                    │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 7     │ docs/07-functional-model.md                   │ Functional decomposition, service responsibilities, data    │    
+ │       │                                               │ flow diagram                                                │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 8     │ docs/08-architecture.md                       │ Architecture pattern, layer diagram, component diagram,     │    
+ │       │                                               │ technology selection, ADRs                                  │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 9     │ docs/09-design-baseline.md                    │ Full UML class diagram (PlantUML), sequence diagrams for    │    
+ │       │                                               │ key flows, design review checklist                          │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 10    │ docs/10-implementation-map.md                 │ C++ class/interface spec, header file structure, API        │    
+ │       │                                               │ contracts                                                   │    
+ ├───────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤    
+ │ 11–15 │ (implementation phases — no primary document  │                                                             │    
+ │       │ artifacts)                                    │                                                             │    
+ └───────┴───────────────────────────────────────────────┴─────────────────────────────────────────────────────────────┘    
+
+ ---
+ Execution Approach
+
+ We work through Stages 1–10 sequentially, one stage per conversation turn or small cluster of turns. At each stage:        
+
+ 1. Draft the artifact collaboratively (Claude writes, user reviews and refines)
+ 2. Commit the document to the repo
+ 3. Identify any risks uncovered and add them to the risk section of that document
+ 4. Only move to the next stage once the current artifact is baselined
+
+ Starting point: Stage 1 — Mission, Vision & Success Criteria
+
+ ---
+ Critical Risk to Surface Early (Stage 3/4)
+
+ The most significant architectural risk in the project is whether CGAL corefinement boolean ops can meet real-time
+ performance targets inside UE5. The current spike shows:
+ - 9 transform steps on a cylinder → sweep_result.obj at 6608 lines (manageable)
+ - Performance for a production mesh with 60+ fps update rate is unknown
+
+ This risk must be formally captured in Stage 3 (requirements) and quantified in Stage 4 (acceptance criteria) before the   
+ architecture can be decided in Stage 8. Options that may emerge:
+ - CGAL with aggressive optimization (parallel, incremental, level-of-detail)
+ - UE5 Geometry Scripting (native, no CGAL dependency in UE)
+ - SDF / voxel-based CSG (faster but approximate)
+ - Convex hull / AABB approximation (fastest, least accurate)
+
+ The Stage 11 architectural spike will test the leading candidate against the Stage 4 acceptance criteria.
+
+ ---
+ Verification
+
+ Each stage is complete when:
+ - The artifact document is committed to docs/
+ - All required sections are populated (no TBDs on critical fields)
+ - Any risks identified are documented with a mitigation note
+ - The user has reviewed and approved the content
+
+ End-to-end success criteria (established fully in Stage 4):
+ - NFR acceptance tests pass for performance, accuracy, and UE5 integration
+ - All FR-xxx items are implemented and validated
+ - The UE5 component builds, attaches to a test actor, and updates in real-time within the defined time budget
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+ Claude has written up a plan and is ready to execute. Would you like to proceed?
+
+ ❯ 1. Yes, auto-accept edits
+   2. Yes, manually approve edits
+   3. No, refine with Ultraplan on Claude Code on the web
+   4. Tell Claude what to change
+      shift+tab to approve with this feedback
+
+ ctrl-g to edit in Notepad · ~\.claude\plans\now-that-cgal-is-quizzical-tarjan.md
