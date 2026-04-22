@@ -1,0 +1,320 @@
+### **SPA Use Case : Theme Park attraction design**
+---
+In theme park attractions, it is critical to visualize the motion of ride vehicles, animated figures (called "audio-animatronics" at Disney), show action equipment, and animated props, through and within the attraction space. Whether the moving equipment is on a (1) fixed motion base, (2) a static cart on a track (such as a roller-coaster), (3) a combined dynamic motion base mounted on a cart following a track (such as the KUKA KR-700 robot arm mounted on a transport platform rolling on the floor folling a single fin track as in Harry Potter & The Forbidden Journey at Universal Studios), (4) a sophisticated animatronic figure with multiple moving appendages making fine-tuned movements, or (5) any simple a mechanical prop performing a cyclical repeating motion on a rack-and-pinion gear, the motion of the mechanical component must be analyzed to ensure that no possible configuration of the system can result in a collision with the facilities, show set, other moving components, and especially guest riders, at any point during operation, E-stop conditions, recovery to normal operations, retraction to egress configuration, or movement to egress guests from the ride. 
+
+An algorithm is suggested that procedurally generates a swept path model representing the entire volume of space occupied my a moving mechanical component over a duration of time. This algorithm refers to the model being analyzed as the "brush". The resulting swept path model is called the "stroke". Multiple strokes can be made in separate CPU/GPU threads and then combined through a boolean union. 
+
+### **The initial approach:**
+---
+Previously, to perform this analysis, show programmers would step through the entire animation frame by frame and visually inspect the position and orientation of the vehicle or figure with respect to other components placed in the scene. This assumed that the 3D representations in their interface (usually Maya or 3DS Max) matched the correct geometry and position of the real attraction space. This was extremely time consuming, even after the initial setup, due to the thousands of frames in a 4+ minute ride/show performance. It was also prone to significant error.
+
+With the evolution of more sophisticated attraction systems, including the KR-700 robot ride vehicle, this analysis also evolved to a procedural script (in Maya or 3DS Max) to duplicate ride vehicle and guest envelop models iteratively throughout the ride vehicle or animatronic profile. This created a visual reference to check the entire motion volume all at once. However, it was still inefficient as it required the system to preprocess the SPM by stepping through the animated sequence and duplicating whatever geometry was being analyzed. It was memory intensive since it created a duplicate of ALL geometry for those models for each frame of animation being analyzed, potentially creating thousands of duplicates in the model. Much of this memory usage is also wasted since polygons interior to the overall swept path are completely unnecessary, and are an extraneous load on system resources. It also prevented procedural analysis for collision detection since each indivudal clone would need to be checked against the entire facility for collisions, which would be highly processor intensive, and most of the collision surfaces in this iterative checking approach would be extraneous since, again, they are internal to the overall swept path. This approach was also prone to minor errors in the shape, since an angled feature, such as a cube, would leave a gap near the corners when moving a in a direction that is not perpendicular to the face creating the sharp angle. In effect, it created a 3D analog to the "stair-stepping" of low resolution 2D pixelated imagery, known as "aliasing". If the object is moving quickly enough at a certain near miss position, it is technically possible that a collision would go undetected if the collision point were to occur between samples. 
+
+In spike tests using python to procedurally perform boolean unions to cull interior polygons, I have attempted to reduce the processor load by folding the iterations of the boolean union in a binary tree fasion. I merge the entire chain of samples as a series of pairs (sample 1 with sample 2 to produce stroke A, sample 3 with sample 4 to produce stroke B, sample 5 with sample 6 to produce stroke C, sample 7 with sample 8 to produce stroke D, etc). Then I repeat the merge process on the resulting strokes, again combining them in pairs (stroke A with Stroke B, stroke C with stroke D, etc). If there is an odd number of strokes to union, the algorithm simply takes the last stroke and merges it as a final step with the previous pair that had been merged together. This iterative cycle continues until reaching a final iteration where there are only 2 or 3 strokes left, and then completes the last boolean union. This process solves the problem of calculating intersections between the brush model and a continuously growing stroke by keeping resulting stroke sizes as small as possible for as long as possible. But it still results in a tremendous processor load when calculating intersection between the final strokes. 
+
+Summarizing the problems to this approach. The algorithm duplicates the brush at regular intervals of between 10 and 30 samples per second of ride vehicle animation. The script then performs a boolean union between these samples to produce a stroke. 1. The algorithm is memory intensive since it creates up to 30 duplicates of the ride vehicle model for each second of animation. For a 4 minute show, that amounts to 7200 duplicate brushes. 2. The python algorithm is processor intensive since it is attempting to perform a boolean union of these 7200 brushes to produce the final stroke model. Even if the original brush is a simple closed mesh with only 150 polygons, that results in over 1 million polygons that must be analyzed for a boolean union. 3. The animation software 3DS Max is not very efficient at performing boolean unions on large complex models. None of the tests have even gotten close to the design parameters described above without freezing the software indefinitely or eventually crashing.
+
+### **Problems with a brute force approach**
+---
+1. **The effect is inefficient since the number of polygons inflates very rapidly, impacting both memory and processor load. At a minimum, a brute force approach like this would have a processor complexity of O(n)^2, while memory complexity would be O(n*logn). 
+2. **The resulting stroke geometry would be less accurate since it would have an "alias" effect, similar to a low resolution raster image. The vertices of a sharp feature would have a gap between samples, resulting in a series of inward recesses, or grooves, on the surface of the resulting swept path model, rather than a smooth surface where a continuous edge loop connects the position of each vertex from one moment to the next. 
+3. **For the same reason, the model's topology would also be less efficient since the extra complexity of the "grooves" between samples would result in extra polygons that are not only unnecessary, but actually imply incorrect precision. 
+4. **The more Boolean unions are performed, the more erratic the edge layout would be, potentially resulting in a large number of poles, higher order polygons that need to be resolved, potential folded polygons, rat's nests, HARPs, and other topology problems that would make collision detections and interference analysis problematic.
+
+### **The Refined approach:**
+---
+A more effcient and accurate approach would be to sweep the model from one moment in time to the next, rather than duplicate it at two points and simply merge the geometry. For one thing, it would remove the extraneous interior polygons, and second would resolve the "aliasing" between time steps.  
+
+The target parameters for this to work are as follows: 
+ *brush model size = 150 polygons 
+ *sample frequency = 30 samples/second 
+ *show duration = 4 minutes 
+
+Implementing a real-time algorithm for **swept path modeling (SPM)** with dynamic updates in Unreal Editor, as described, presents some complex challenges, but it's feasible depending on various factors such as processing power, the size of the data, and the complexity of the animation. Here’s a breakdown of the probabilities for achieving different aspects of the real-time algorithm in Unreal Editor:
+
+This algorithm framework outlines a more efficient and accurate method for generating the **Swept Path Model (SPM)**, focusing on minimizing memory and processing load while maintaining smooth, clean geometry. Here's the detailed process for generating a smooth and accurate SPM stroke:
+
+---
+---
+
+### **Sweep Algorithm Framework:**
+
+---
+
+#### **A. Assumptions**
+
+1. **Triangulated Mesh:** The input brush model must be fully triangulated, meaning all polygons have three sides.
+2. **Closed Mesh:** The brush should be a clean, closed mesh with no border edges, holes, or degenerative geometry (no orphan vertices, degenerate edges, or polygons).
+3. **Animation Timeline:** The algorithm samples the mesh at a predefined interval (e.g., 10–30 frames per second), depending on the complexity of the motion and desired smoothness of the SPM stroke.
+
+---
+
+#### **B. Algorithm Steps**
+
+1. **Initial Sweep Setup**
+
+   * For the first frame in the sequence:
+
+     1. **Duplicate the Brush:** Create an initial duplicate of the brush at the starting time (`t=0`).
+     2. **Seed Stroke:** Use this as the seed for the stroke generation process.
+
+2. **Calculate Leading Edge (Per Sample)**
+
+   * For each time sample, from the current to the next sample:
+
+     1. **Vector Calculation:** For each vertex in the brush, calculate the vector displacement from its previous position to its current position (`V = Vertex_current - Vertex_previous`).
+     2. **Projection Check:**
+
+        * Project the displacement vector onto the vertex normal.
+        * If the projection is positive, keep this vertex and its connected polygons for further processing.
+        * If the projection is zero or negative, ignore the vertex (since it’s moving away from the direction of motion).
+     3. **Store Leading Vertices and Polygons:** Keep track of the vertices and polygons that are moving in the forward direction in arrays called `leadingEdgeVertices` and `leadingEdgePolygons`.
+
+3. **Generate the New Sweep Geometry**
+
+   * For the set of leading edge vertices and polygons:
+
+     1. **Duplicate Vertices and Polygons:**
+
+        * **At current time (`t1`):** Duplicate the leading edge polygons at the current time (`t1`), maintaining their original winding order.
+        * **At previous time (`t0`):** Duplicate the same leading edge polygons from the previous sample (`t0`), reversing the winding order to ensure proper surface normal orientation.
+     2. **Bridge the Sweep:**
+
+        * Generate connecting polygons (bridge faces) between corresponding vertices at time `t0` and `t1` to form the sides of the stroke. These bridge polygons close the mesh between the two time samples.
+
+4. **Merge the Sweep with the Current Stroke**
+
+   * **Boolean Union:** Perform a Boolean Union between the newly generated sweep mesh and the existing stroke mesh.
+
+     1. **Efficient Merging:** Instead of simply unioning, optimize by using the bridge faces to align the two meshes and cut holes where the new sweep intersects the stroke.
+     2. **Handle Overlapping Polygons:** Ensure overlapping polygons between the sweep and stroke are merged correctly to avoid creating complex topology (such as poles or unnecessary vertices).
+     3. **Topology Simplification:** After merging, simplify the resulting topology by merging close vertices and reducing unnecessary complexity in the stroke.
+
+5. **Handle Edge Cases**
+
+   1. **Close-to-Zero Floating Point Error:** When checking the projection, allow for floating-point errors near zero, ensuring smooth transitions between forward- and backward-moving polygons.
+   2. **Backtracking Geometry:** Handle cases where the geometry backtracks into previously occupied space without causing significant topology errors.
+   3. **Clipping Between Vertices:** Ensure the algorithm handles situations where parts of the leading edge polygons clip between vertices, requiring a Boolean Union to resolve these overlaps.
+   4. **Topology Simplification:** Implement procedural merging of vertices after the Boolean Union step to maintain smooth and clean geometry without introducing unnecessary complexity.
+
+6. **Repeat for All Samples in the Time Interval**
+
+   * Continue the process for each subsequent time sample in the defined time interval, merging each new sweep with the current stroke until the full stroke is generated for that time interval.
+
+---
+
+#### **C. Key Considerations**
+
+1. **Floating Point Error Handling:** Use tolerances when projecting vertices onto the normal to avoid jitter or errors caused by tiny floating point discrepancies.
+2. **Backtracking:** When parts of the model backtrack into previously occupied space, allow for small overlaps but ensure that geometry doesn't become entangled.
+3. **Clipping Polygons:** The Boolean Union step must handle complex cases of vertices clipping through each other, requiring accurate topology merging to avoid errors.
+4. **Topology Simplification:** After each merge, apply a topology simplification algorithm to remove excess vertices, reduce polygon count, and maintain the smoothness of the stroke.
+
+---
+
+#### **D. Finalization**
+
+* After all samples are processed for the time interval, the final SPM stroke is ready for further analysis, such as collision detection or visualization.
+
+---
+---
+
+### Next is a refined algorithm for use in real-time applications, such as Unreal Engine
+
+---
+---
+
+### **1. Dynamic Stroke Segmentation for Efficient Use in Real-Time Applications (Unreal Editor)**
+
+To optimize the process, we dynamically segment the time range and only update the segments of the SPM that correspond to changes in the animation. This hierarchical segmentation approach allows us to minimize unnecessary recalculations by isolating and updating only the modified sections.
+
+#### **Stroke Layer Hierarchy:**
+
+* **Stroke_Layer_0:** Represents the entire time range of the animation sequence.
+* **Stroke_Layer_1:** The Stroke_Layer_0 time range split in half.
+* **Stroke_Layer_2:** Divides each Stroke_Layer_1 segment into regular intervals based on a user-defined parameter.
+* **Stroke_Layer_3:** Divides time based on all keyframes from all animation channels (e.g., Translate, Rotate, Scale in X, Y, and Z).
+
+---
+
+### **2. Initial Stroke Generation**
+
+For the initial calculation:
+
+1. **Calculate Strokes for Layer 3:**
+
+   * Use the "Sweep" algorithm to generate strokes for each time segment in **Stroke_Layer_3**. These segments are based on keyframe intervals from all animated channels (Translate, Rotate, Scale).
+2. **Merge Strokes into Higher Layers:**
+
+   * **Layer 2:** Merge the Stroke_Layer_3 meshes for each regular time segment using Boolean Unions.
+   * **Layer 1:** Merge the Stroke_Layer_2 meshes into two segments for Stroke_Layer_1.
+   * **Layer 0:** Merge the two Stroke_Layer_1 meshes into a single final stroke representing the entire timeline.
+
+At this point, **only Stroke_Layer_0** is displayed in the scene, while all lower layer meshes are stored either in memory or as invisible objects in the Content Browser.
+
+---
+
+### **3. Keyframe Tracking and Change Detection**
+
+When a change occurs in the animation (e.g., a keyframe is modified):
+
+1. **Track the Affected Keyframe:**
+
+   * Use a tree structure to track keyframes and their associated time intervals across different animation channels (Translate, Rotate, Scale) and objects in the scene.
+2. **Identify Invalidation Range:**
+
+   * Determine the time range affected by the change based on the surrounding keyframes in all channels.
+   * For example, if a keyframe on **Translate X** is modified at time `t = 40s`, the invalidation range will be determined by the keyframes before and after it on all animation channels (e.g., Translate Y, Rotate X).
+   * This range is dynamically expanded as necessary based on keyframe overlap across channels.
+
+---
+
+### **4. Stroke Layer Update Process**
+
+Once the invalidated time range is determined:
+
+1. **Invalidate Stroke Segments:**
+
+   * Invalidate all Stroke_Layer_3 segments within the affected time range. This is based on the keyframe intervals in the animation channels.
+   * Similarly, invalidate the corresponding **Stroke_Layer_2**, **Stroke_Layer_1**, and **Stroke_Layer_0** segments.
+2. **Regenerate Stroke Segments:**
+
+   * Regenerate the invalidated Stroke_Layer_3 meshes using the "Sweep" algorithm.
+   * Merge these new Stroke_Layer_3 meshes into Stroke_Layer_2 intervals using Boolean Union operations.
+   * Continue merging Stroke_Layer_2 intervals into the higher layers until the final Stroke_Layer_0 is regenerated.
+
+---
+
+### **5. Time Layer Structure for Keyframe Management**
+
+The time ranges of invalidated strokes are managed in parallel with the **Time Layers**:
+
+* **Time_Layer_00:** Represents the entire animation time range.
+* **Time_Layer_01:** The time range split in half.
+* **Time_Layer_02:** Regular time intervals as defined by the user.
+* **Time_Layer_03 to Time_Layer_09:** These layers track keyframes for individual channels (Translate, Rotate, Scale) in X, Y, Z directions for each mesh in the animation.
+
+
+---
+
+### **6. Example: Keyframe Modification**
+
+Suppose the animation includes the following keyframes:
+
+* **Translate X:** Key(1, 3), Key(40, 57), Key(63, 62)
+* **Translate Y:** Key(2, 4), Key(37, 27)
+* **Rotate X:** Key(3, 14), Key(40, 37)
+
+If a keyframe is modified at **Translate X, t = 40s**:
+
+1. **Identify Invalidation Range:**
+
+   * Translate X invalidation: 27s to 63s (surrounding keyframes).
+   * Translate Y invalidation: 37s to 59s (overlap range).
+   * Rotate X invalidation: 23s to 65s (surrounding keyframes).
+   * The total invalidation range is **21s to 65s**.
+
+2. **Invalidate Stroke Layers:**
+
+   * All Stroke_Layer_3 meshes in this time range are invalidated.
+   * Corresponding Stroke_Layer_2 intervals are invalidated.
+   * Finally, invalidate Stroke_Layer_1 and Stroke_Layer_0 segments for that range.
+
+---
+
+### **7. Efficient Stroke Regeneration Process**
+
+1. **Bottom-Up Regeneration:**
+
+   * Start by regenerating the Stroke_Layer_3 meshes for the invalidated time range.
+   * Merge the Stroke_Layer_3 meshes into Stroke_Layer_2 segments.
+   * Merge Stroke_Layer_2 segments into Stroke_Layer_1, and finally into Stroke_Layer_0.
+
+2. **Selective Boolean Union:**
+
+   * Boolean Unions are performed only on the invalidated sections, ensuring minimal processing load.
+   * Avoid recalculating unaffected parts of the SPM, improving real-time feedback efficiency.
+
+---
+
+### **8. Final Output and Collision Detection**
+
+1. **Display Updated Stroke:**
+
+   * Once all stroke segments are regenerated, the final Stroke_Layer_0 mesh is displayed in the scene.
+   * All previous meshes are either deleted or stored invisibly for future use.
+
+2. **Collision Detection and Visualization:**
+
+   * The regenerated SPM stroke is checked for collisions with other scene geometry.
+   * Any overlaps or intersections are highlighted using a dynamic collision mesh, providing immediate feedback to the user.
+
+---
+
+### **Summary of Benefits:**
+
+* **Real-Time Efficiency:** By updating only the affected segments, the tool minimizes unnecessary recalculations, improving responsiveness and reducing processing load.
+* **Dynamic Segmentation:** Hierarchical time segmentation isolates invalidation ranges, allowing focused updates rather than global recalculations.
+* **Parallel Stroke and Time Tracking:** The use of Stroke and Time Layers ensures accurate synchronization between keyframe changes and corresponding stroke updates.
+* **Collision Detection Integration:** Real-time feedback includes dynamic collision checking for precise intersection analysis.
+
+
+---
+---
+
+### **1. Dynamic Stroke Segmentation & Real-Time Updates:**
+
+* **Feasibility:** **80%-90%**
+
+  * **Reasoning:** Unreal Engine 5.4’s architecture supports modular and multi-threaded operations via **Async Tasks** and **Procedural Mesh Components**, making it possible to generate meshes and handle updates in real-time without pausing or lagging the editor.
+  * **Challenges:** The complexity of managing hierarchies of strokes and ensuring smooth Boolean operations across these layers is non-trivial but possible. Unreal’s **Blueprint system** is flexible enough to allow for this modular structure, and while more efficient C++ implementations may be needed, the editor can handle most operations without requiring Play-In-Editor (PIE).
+  * **Mitigating Factor:** It may require simplification of geometry during real-time updates or the use of **Level of Detail (LOD)** to manage performance during heavy operations.
+
+### **2. Boolean Union and Mesh Merging in Real-Time:**
+
+* **Feasibility:** **60%-75%**
+
+  * **Reasoning:** Boolean operations are computationally expensive, and Unreal Engine doesn’t natively handle complex Boolean operations in real-time on dynamic meshes without significant overhead. However, simplified Boolean operations between predefined geometries are achievable in real-time through Unreal’s **Procedural Mesh** and **Geometry Script** features.
+  * **Challenges:** Handling precise mesh merging at large polygon counts with high levels of accuracy while maintaining smoothness in real-time can cause significant processing delays. Optimizing Boolean Union to only occur on necessary sections of the mesh and using **proximity checks** can improve efficiency but may still result in performance hits during complex geometry changes.
+  * **Mitigating Factor:** Segmenting the Boolean operations into smaller intervals and performing them asynchronously or progressively could ease the processing load and make real-time performance more likely.
+
+### **3. Multi-Layer Keyframe Tracking and Stroke Invalidation:**
+
+* **Feasibility:** **85%-95%**
+
+  * **Reasoning:** Keyframe tracking, hierarchical time segmentation, and invalidation of specific time intervals based on keyframe changes are well within the capabilities of Unreal Engine’s **Animation Blueprint** and **Timeline systems**. Using **C++ delegates** or **Blueprint event dispatchers**, real-time keyframe modifications can efficiently trigger updates.
+  * **Challenges:** The complexity arises when managing large numbers of keyframes across multiple animated objects and tracking dependencies between them. However, Unreal Engine’s event-driven architecture is well-suited for monitoring these changes and updating only the affected stroke segments.
+  * **Mitigating Factor:** The time taken to check for dependencies between multiple keyframe channels can be minimized by limiting the scope of keyframe channels to specific parameters unless necessary.
+
+### **4. Real-Time Collision Detection and Visualization:**
+
+* **Feasibility:** **75%-85%**
+
+  * **Reasoning:** Unreal Engine has built-in support for **collision detection** and **overlap events**, which can be leveraged to handle the real-time visualization of swept path intersections with other geometry in the scene. By generating dynamic meshes that represent collision zones, these intersections can be visualized with custom materials (e.g., red laser or X-Ray materials).
+  * **Challenges:** The difficulty lies in the scale of the geometry and the accuracy required. Real-time boolean intersections and complex collision detection, especially when performed on high-resolution geometry, could affect performance if the stroke path covers a long animation or involves intricate models.
+  * **Mitigating Factor:** Reducing the frequency of updates and simplifying the geometry of collision meshes during real-time operations can increase performance, with high-fidelity checks reserved for lower-frequency or final updates.
+
+### **5. Memory Management and Stroke Segmentation Storage:**
+
+* **Feasibility:** **90%-95%**
+
+  * **Reasoning:** Unreal Engine can efficiently store multiple mesh assets and maintain memory for invisible stroke segments that are not actively displayed. The engine is built to handle **LOD** and **mesh pooling** systems, which can be adapted to handle stroke segmentation.
+  * **Challenges:** Managing large numbers of stroke layers and keeping track of invalidation and updates dynamically may lead to memory bloat, especially for longer animations with high-detail meshes.
+  * **Mitigating Factor:** The segmentation of the stroke into manageable time intervals and layers minimizes memory overhead, and using Unreal’s asset streaming or temporary in-memory storage can help reduce load times for updating strokes.
+
+### **6. Multi-Threading and Performance Scaling:**
+
+* **Feasibility:** **65%-85%**
+
+  * **Reasoning:** Unreal Engine allows for **multi-threading** via **Async Tasks** and **Task Graph systems**, which could theoretically offload stroke generation and Boolean operations to background threads while allowing the editor to remain responsive. However, efficiently multi-threading complex operations like Boolean Unions, mesh generation, and real-time updates without blocking the main thread is challenging, especially at high geometry complexities.
+  * **Challenges:** Thread management is delicate, especially when dealing with dependencies between mesh generation and other real-time operations (e.g., collision detection). Unreal Editor’s performance can degrade if too many complex tasks are run concurrently.
+  * **Mitigating Factor:** Optimizing threading by distributing tasks like keyframe validation and mesh merging across different cores can significantly improve performance, but will likely require testing and adjustment based on the complexity of the model.
+
+---
+
+### **Overall Feasibility:**
+
+* **Highly Likely (~70%-80%)**: The overall algorithm is feasible within Unreal Editor for real-time use, especially if the geometry and animation complexity are managed through optimizations like segmenting strokes, reducing the polygon count of intermediate layers, and dynamically adjusting the update frequency based on the user’s current needs.
+* **Challenges**: Boolean operations and mesh merging are the most performance-intensive parts and could be difficult to implement in true real-time without hitting some performance bottlenecks. Complex animations with many keyframes and high-polygon meshes will need careful management.
+* **Opportunities for Optimization**: Segmenting strokes into smaller, manageable pieces, offloading complex calculations to background threads, and dynamically adjusting the detail level of stroke segments during editing can help achieve smoother real-time feedback.
+
