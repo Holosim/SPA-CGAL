@@ -1,0 +1,25 @@
+# Row-major 4x4 transformation matrices — 16 comma-separated values per row.,,,,,,,,,,,,,,,
+# Format: m00,m01,m02,m03, m10,m11,m12,m13, m20,m21,m22,m23, m30,m31,m32,m33
+# The last row (m30..m33) is the homogeneous row and is ignored (always 0,0,0,1).,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,
+# This sample sweeps a brush mesh 9 steps along the X axis in 0.4-unit increments,,,,,,,,,,,,,,,
+# producing a stroke from x=0 to x=3.2.,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+# Step 0 — identity (base position),,,,,,,,,,,,,,,
+1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
+# Step 1 — translate x+0.4,,,,,,,,,,,,,,,
+1,0,0,0.4,0.4,1,0,0,0,0,1,0,0,0,0,1
+# Step 2 — translate x+0.8,,,,,,,,,,,,,,,
+1,0,0,0.8,0.8,1,0,0,0,0,1,0,0,0,0,1
+# Step 3 — translate x+1.2,,,,,,,,,,,,,,,
+1,0,0,1.2,1.2,1,0,0,0,0,1,0,0,0,0,1
+# Step 4 — translate x+1.6,,,,,,,,,,,,,,,
+1,0,0,1.6,1.6,1,0,0,0,0,1,0,0,0,0,1
+# Step 5 — translate x+2.0,,,,,,,,,,,,,,,
+1,0,0,2,2,1,0,0,0,0,1,0,0,0,0,1
+# Step 6 — translate x+2.4,,,,,,,,,,,,,,,
+1,0,0,2.4,2.4,1,0,0,0,0,1,0,0,0,0,1
+# Step 7 — translate x+2.8,,,,,,,,,,,,,,,
+1,0,0,2.8,2.8,1,0,0,0,0,1,0,0,0,0,1
+# Step 8 — translate x+3.2,,,,,,,,,,,,,,,
+1,0,0,3.2,3.2,1,0,0,0,0,1,0,0,0,0,1

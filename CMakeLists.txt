@@ -8,9 +8,19 @@ find_package(CGAL REQUIRED)
 
 add_executable(BooleanOp
     src/main.cpp
+    # Header-only modules — listed here so they appear in IDE project trees.
+    src/Config.h
+    src/MeshUtils.h
+    src/Benchmark.h
+    src/BatchMerge.h
+    src/TransformSweep.h
 )
 
 target_link_libraries(BooleanOp PRIVATE CGAL::CGAL)
+
+if(WIN32)
+    target_link_libraries(BooleanOp PRIVATE psapi)
+endif()
 
 if(MSVC)
     target_compile_options(BooleanOp PRIVATE /W3 /wd4996 /wd4267 /wd4244)
